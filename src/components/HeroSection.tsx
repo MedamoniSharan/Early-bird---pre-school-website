@@ -119,7 +119,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <div className="relative rounded-3xl overflow-hidden border-4 border-[#FFBE0B] shadow-2xl bg-[#3A1763]">
               <motion.div style={{ y: photoY, scale: shouldReduceMotion ? 1 : 1.06, willChange: 'transform' }}>
                 <ResilientImage
-                  src="/src/assets/images/hero_preschool_classroom_1794591478807.jpg"
+                  src="/images/hero_preschool_classroom_1794591478807.jpg"
                   alt="Happy Indian children learning with colorful wooden Montessori blocks and smiling educator at Early Wings Preschool"
                   fallbackTitle="Early Wings Preschool"
                   className="w-full h-56 sm:h-72 lg:h-80 object-cover"

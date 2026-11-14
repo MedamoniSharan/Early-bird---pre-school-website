@@ -246,7 +246,7 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
             <div className="w-full rounded-3xl overflow-hidden border-4 border-[#FFBE0B] shadow-xl bg-slate-100 transition-transform duration-200 lg:rotate-1 lg:hover:rotate-0">
               <ParallaxLayer offset={14} className="w-full h-64 sm:h-80 lg:h-full">
                 <ResilientImage
-                  src="/src/assets/images/creative_storytelling_arts_1794591479625.jpg"
+                  src="/images/creative_storytelling_arts_1794591479625.jpg"
                   alt="Early Wings children joyfully participating in puppet storytelling and creative leaf craft activities"
                   fallbackTitle="Storytelling & Creative Arts"
                   className="w-full h-full object-cover"

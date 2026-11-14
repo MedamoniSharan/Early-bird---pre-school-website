@@ -138,7 +138,7 @@ export function WhyChooseSection() {
                         className="w-full h-full"
                       >
                         <ResilientImage
-                          src="/src/assets/images/why_holistic_circle_time_1794592559146.jpg"
+                          src="/images/why_holistic_circle_time_1794592559146.jpg"
                           alt="Teacher and preschool children clapping in circle time at Early Wings"
                           fallbackTitle="Holistic Learning"
                           className="w-full h-full object-cover object-center"
@@ -167,7 +167,7 @@ export function WhyChooseSection() {
                         className="w-full h-full"
                       >
                         <ResilientImage
-                          src="/src/assets/images/why_expert_educator_child_1794592559332.jpg"
+                          src="/images/why_expert_educator_child_1794592559332.jpg"
                           alt="Smiling preschool child holding wooden Montessori number blocks"
                           fallbackTitle="Expert Educators"
                           className="w-full h-full object-cover object-center"
@@ -196,7 +196,7 @@ export function WhyChooseSection() {
                         className="w-full h-full"
                       >
                         <ResilientImage
-                          src="/src/assets/images/why_safe_classroom_view_1794592559835.jpg"
+                          src="/images/why_safe_classroom_view_1794592559835.jpg"
                           alt="Happy preschool children seated neatly in a bright safe classroom"
                           fallbackTitle="Safe and Secure"
                           className="w-full h-full object-cover object-center"
@@ -239,7 +239,7 @@ export function WhyChooseSection() {
                   <polygon points="120,16 14,202 226,202" fill="#FFFFFF" />
                   <polygon points="120,24 22,196 218,196" fill="#F3E8FF" />
                   <image
-                    href="/src/assets/images/why_innovative_learner_boy_1794592562293.jpg"
+                    href="/images/why_innovative_learner_boy_1794592562293.jpg"
                     x="10"
                     y="16"
                     width="220"
