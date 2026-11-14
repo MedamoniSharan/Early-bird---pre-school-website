@@ -1,0 +1,6 @@
+{
+  "name": "Early Wings Preschool",
+  "description": "Rise ~ Rooted Wings Within. Child-centred Montessori & Kreedo early childhood education for Playgroup, Nursery, LKG and UKG in Kanuru, Vijayawada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
