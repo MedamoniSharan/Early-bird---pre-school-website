@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { ArrowRight, BookOpen, ExternalLink, PlayCircle } from 'lucide-react';
+import { ArrowRight, BookOpen, Check, ExternalLink, PlayCircle, Sparkles } from 'lucide-react';
 import {
+  EARLY_WINGS_ORAL_BOOK,
   EXPERIENTIAL_ACTIVITIES,
   FOUNDER_PROFILE,
   LEARNING_THEMES,
@@ -44,75 +45,113 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
             {/* Large Bento Card: Early Wings Oral Book */}
             <div className="lg:col-span-7 bg-[#F5F0FF] border-2 border-purple-200/80 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between gap-4 mb-4">
-                  <p className="text-xs font-bold text-[#4C227C]">
-                    Original Publication <span aria-hidden="true" className="mx-1.5 text-slate-400">·</span> Nursery to UKG
-                  </p>
-                  <BookOpen className="w-5 h-5 text-[#4C227C]" aria-hidden="true" />
+              <div className="space-y-4">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#4C227C] text-white text-xs font-bold uppercase tracking-wider">
+                    <BookOpen className="w-4 h-4" />
+                    <span>Exclusive Educational Resource</span>
+                  </span>
+                  <span className="text-xs font-bold text-[#4C227C]">
+                    Playgroup to Grade 2
+                  </span>
                 </div>
 
-                <h3 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 mb-3">
-                  Early Wings Oral Book
-                </h3>
-                <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-5">
-                  This original oral learning compendium builds bilingual fluency, memory, cultural pride, and joyful stage confidence every day across Nursery, LKG, and UKG.
+                <div>
+                  <h3 className="font-display text-2xl sm:text-3xl font-bold text-slate-950">
+                    {EARLY_WINGS_ORAL_BOOK.title}
+                  </h3>
+                  <p className="font-display text-sm sm:text-base font-semibold text-[#4C227C] mt-0.5">
+                    {EARLY_WINGS_ORAL_BOOK.subtitle}
+                  </p>
+                </div>
+
+                <p className="text-xs sm:text-sm text-slate-700 font-semibold bg-white/70 border border-purple-200/60 rounded-xl p-3 leading-relaxed">
+                  {EARLY_WINGS_ORAL_BOOK.authorship}
                 </p>
 
+                <p className="text-sm text-slate-700 leading-relaxed font-medium">
+                  {EARLY_WINGS_ORAL_BOOK.purpose}
+                </p>
+
+                {/* The Book Includes List */}
+                <div className="bg-white rounded-2xl p-4 sm:p-5 border border-purple-100 space-y-2.5">
+                  <p className="text-xs font-bold uppercase tracking-wider text-[#4C227C]">
+                    The Book Includes:
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {EARLY_WINGS_ORAL_BOOK.includes.map((item) => (
+                      <div key={item} className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-800">
+                        <Check className="w-4 h-4 text-[#4C227C] shrink-0" />
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Interactive Content Preview Tabs */}
-                <div
-                  role="tablist"
-                  aria-label="Early Wings Oral Book sections"
-                  className="flex flex-wrap gap-2 mb-5"
-                >
-                  {ORAL_BOOK_CATEGORIES.map((category) => {
-                    const active = category.id === selectedBookCatId;
-                    return (
-                      <button
-                        key={category.id}
-                        role="tab"
-                        type="button"
-                        aria-selected={active}
-                        onClick={() => setSelectedBookCatId(category.id)}
-                        className={`px-3.5 py-2.5 text-xs sm:text-sm font-bold rounded-2xl border-2 transition-colors sm:whitespace-nowrap text-left focus-visible:outline-2 focus-visible:outline-[#4C227C] ${
-                          active
-                            ? 'bg-[#4C227C] text-white border-[#4C227C]'
-                            : 'bg-white text-slate-700 border-purple-200 hover:border-[#4C227C]/50'
-                        }`}
-                      >
-                        {category.title}
-                      </button>
-                    );
-                  })}
+                <div>
+                  <p className="text-xs font-bold text-slate-600 mb-2">
+                    Explore Oral Book Modules:
+                  </p>
+                  <div
+                    role="tablist"
+                    aria-label="Early Wings Oral Book sections"
+                    className="flex flex-wrap gap-2"
+                  >
+                    {ORAL_BOOK_CATEGORIES.map((category) => {
+                      const active = category.id === selectedBookCatId;
+                      return (
+                        <button
+                          key={category.id}
+                          role="tab"
+                          type="button"
+                          aria-selected={active}
+                          onClick={() => setSelectedBookCatId(category.id)}
+                          className={`px-3 py-2 text-xs font-bold rounded-xl border-2 transition-colors sm:whitespace-nowrap text-left focus-visible:outline-2 focus-visible:outline-[#4C227C] ${
+                            active
+                              ? 'bg-[#4C227C] text-white border-[#4C227C]'
+                              : 'bg-white text-slate-700 border-purple-200 hover:border-[#4C227C]/50'
+                          }`}
+                        >
+                          {category.title}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 pt-4">
                 <div
                   role="tabpanel"
                   aria-label={activeCategory.title}
-                  className="bg-white border-2 border-purple-100 rounded-2xl p-5"
+                  className="bg-white border-2 border-purple-100 rounded-2xl p-4 sm:p-5 shadow-xs"
                 >
-                  <p className="font-display text-lg font-bold text-slate-950 mb-1.5">
+                  <p className="font-display text-base font-bold text-slate-950 mb-1">
                     {activeCategory.title}
                   </p>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
                     {activeCategory.description}
                   </p>
-                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs font-bold text-[#4C227C]">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold text-[#4C227C]">
                     {activeCategory.highlights.map((item, idx) => (
                       <span key={item}>
-                        {idx > 0 && <span aria-hidden="true" className="mr-4 text-slate-300">/</span>}
+                        {idx > 0 && <span aria-hidden="true" className="mr-3 text-slate-300">/</span>}
                         {item}
                       </span>
                     ))}
                   </div>
                 </div>
 
-                {/* Exact Required Authorship Credit */}
-                <p className="text-xs sm:text-sm font-bold text-[#4C227C] pt-1">
-                  {ORAL_BOOK_AUTHORSHIP}
-                </p>
+                {/* Outcome & Core Values Footer */}
+                <div className="pt-2 border-t border-purple-200/80 space-y-1">
+                  <p className="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed">
+                    {EARLY_WINGS_ORAL_BOOK.outcome}
+                  </p>
+                  <p className="text-xs font-bold text-[#4C227C] italic">
+                    “{EARLY_WINGS_ORAL_BOOK.tagline}”
+                  </p>
+                </div>
               </div>
             </div>
 

@@ -347,39 +347,65 @@ export const KREEDO_POWERED = {
     'Early Wings Preschool is proudly powered by Kreedo Early Childhood Solutions, Bengaluru — providing structured learning frameworks, Montessori-inspired learning materials, and ongoing teacher training.',
 };
 
+export const EARLY_WINGS_ORAL_BOOK = {
+  title: 'EARLY WINGS ORAL BOOK',
+  subtitle: "A Child's Oral Companion – Playgroup to Grade 2",
+  authorship:
+    'An exclusive educational resource thoughtfully compiled and authored by Karunamai Nandamuri, Founder & Principal of Early Wings Preschool.',
+  purpose:
+    "Designed to enrich children's vocabulary, communication, memory and general knowledge through age-appropriate oral learning.",
+  includes: [
+    'Telugu & English Rhymes and Poems',
+    'National Songs',
+    'Vemana Padyalu',
+    'General Knowledge',
+    'Age-appropriate learning topics',
+  ],
+  outcome:
+    'A meaningful learning companion that nurtures confident expression, strong language foundations and joyful learning.',
+  tagline: 'Curated with care. Rooted in values. Created for little learners.',
+};
+
 export const ORAL_BOOK_CATEGORIES: OralBookCategory[] = [
   {
     id: 'poems',
-    title: 'English and Telugu Poems',
+    title: 'Telugu & English Rhymes and Poems',
     description:
-      'Rhythmic bilingual verses curated for Nursery to UKG to build pronunciation, vocabulary, and expressive confidence in both languages.',
+      'Rhythmic bilingual verses curated for Playgroup to Grade 2 to build pronunciation, expressive vocabulary, and confident everyday recitation.',
     highlights: ['Bilingual phonetic rhythm', 'Memory & listening fluency', 'Daily joyful recitation'],
   },
   {
     id: 'national',
     title: 'National Songs',
     description:
-      'Patriotic songs and civic verses that cultivate gratitude, unity, respect for heritage, and poised assembly participation.',
-    highlights: ['Civic & cultural pride', 'Group singing harmony', 'Stage readiness'],
+      'Patriotic anthems and civic verses that cultivate gratitude, unity, respect for our nation, and poised assembly stage participation.',
+    highlights: ['Civic & cultural pride', 'Group singing harmony', 'Assembly stage readiness'],
   },
   {
     id: 'vemana',
     title: 'Vemana Padyalu',
     description:
-      'Timeless Telugu moral verses introduced in child-friendly explanations to nurture ethical thinking, humility, and cultural roots.',
+      'Timeless Telugu moral verses introduced with child-friendly explanations to nurture ethical thinking, humility, and deep cultural roots.',
     highlights: ['Mother-tongue heritage', 'Moral character lessons', 'Age-appropriate meaning'],
   },
   {
     id: 'gk',
-    title: 'General Knowledge Topics',
+    title: 'General Knowledge',
     description:
-      'Structured age-appropriate oral facts covering nature, community helpers, seasons, healthy habits, and the world around us.',
+      'Structured age-appropriate oral facts covering nature, science, community helpers, seasons, healthy habits, and the world around us.',
     highlights: ['Curiosity-driven inquiry', 'Conversational awareness', 'Real-world connections'],
+  },
+  {
+    id: 'topics',
+    title: 'Age-Appropriate Learning Topics',
+    description:
+      'Developmentally progressive thematic modules spanning Playgroup, Nursery, LKG, UKG, and Grade 1 & 2 for strong conceptual foundations.',
+    highlights: ['Playgroup to Grade 2', 'Structured progression', 'Lifelong learning companion'],
   },
 ];
 
 export const ORAL_BOOK_AUTHORSHIP =
-  'Conceptualised, Compiled & Authored by Karunamai Nandamuri, Founder & Principal, Early Wings Preschool.';
+  'An exclusive educational resource thoughtfully compiled and authored by Karunamai Nandamuri, Founder & Principal of Early Wings Preschool.';
 
 export const EXPERIENTIAL_ACTIVITIES = [
   'Yoga and physical activities',
