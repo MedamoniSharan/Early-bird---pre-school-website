@@ -350,20 +350,31 @@ export const KREEDO_POWERED = {
 export const EARLY_WINGS_ORAL_BOOK = {
   title: 'EARLY WINGS ORAL BOOK',
   subtitle: "A Child's Oral Companion – Playgroup to Grade 2",
+  image: '/images/early_wings_oral_book_showcase.jpg',
+  alt: 'Early Wings Oral Book — A Child’s Oral Companion Playgroup to Grade 2 authored by Karunamai Nandamuri',
   authorship:
     'An exclusive educational resource thoughtfully compiled and authored by Karunamai Nandamuri, Founder & Principal of Early Wings Preschool.',
+  quote:
+    'Let us fill little hearts with big truths, simple words with deep roots and young wings with the courage to fly.',
   purpose:
     "Designed to enrich children's vocabulary, communication, memory and general knowledge through age-appropriate oral learning.",
   includes: [
-    'Telugu & English Rhymes and Poems',
+    'English and Telugu Poems',
     'National Songs',
     'Vemana Padyalu',
-    'General Knowledge',
-    'Age-appropriate learning topics',
+    'General Knowledge Topics',
+    'Age-Appropriate Oral Learning Content',
+  ],
+  benefits: [
+    { title: 'Enriches Language Development', desc: 'Bilingual phonics & expressive vocabulary' },
+    { title: 'Strengthens Memory and Recall', desc: 'Rhythmic recitation & active listening' },
+    { title: 'Builds Cultural Awareness', desc: 'Telugu Vemana padyalu & national songs' },
+    { title: 'Expands General Knowledge', desc: 'Real-world science & community awareness' },
+    { title: 'Nurtures Confidence and Expression', desc: 'Joyful stage speaking & assembly presence' },
   ],
   outcome:
     'A meaningful learning companion that nurtures confident expression, strong language foundations and joyful learning.',
-  tagline: 'Curated with care. Rooted in values. Created for little learners.',
+  tagline: 'Curated with Purpose, Created with Love. Rooted in values for little learners.',
 };
 
 export const ORAL_BOOK_CATEGORIES: OralBookCategory[] = [
@@ -630,6 +641,14 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     year: '20 May 2016',
     image: '/assets/aistudio/b061acc4-3c06-4435-8463-936a3606c82d_ddbb6c72.jpg',
     alt: 'Kreedo Teacher Training Bengaluru Certificate of Completion awarded to Karunamai Nandamuri on 20 May 2016',
+  },
+  {
+    id: 'oral-book-showcase',
+    category: 'classroom',
+    title: 'Early Wings Oral Book — Exclusive Educational Resource',
+    subtitle: 'Playgroup to Grade 2 · Compiled & Authored by Karunamai Nandamuri',
+    image: '/images/early_wings_oral_book_showcase.jpg',
+    alt: 'Early Wings Oral Book front & back cover mockup authored by Karunamai Nandamuri',
   },
   // Authentic Facebook Community & Campus Life Photos
   {

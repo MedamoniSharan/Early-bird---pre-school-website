@@ -1,5 +1,19 @@
 import { useState } from 'react';
-import { ArrowRight, BookOpen, Check, ExternalLink, PlayCircle, Sparkles } from 'lucide-react';
+import {
+  ArrowRight,
+  BookOpen,
+  Brain,
+  Check,
+  Compass,
+  ExternalLink,
+  Heart,
+  MessageSquare,
+  PlayCircle,
+  Sparkles,
+  Star,
+  X,
+  ZoomIn,
+} from 'lucide-react';
 import {
   EARLY_WINGS_ORAL_BOOK,
   EXPERIENTIAL_ACTIVITIES,
@@ -22,6 +36,7 @@ interface InitiativesSectionProps {
 export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
   const [selectedBookCatId, setSelectedBookCatId] = useState(ORAL_BOOK_CATEGORIES[0].id);
   const [beyondTab, setBeyondTab] = useState<'activities' | 'themes'>('activities');
+  const [isBookModalOpen, setIsBookModalOpen] = useState(false);
 
   const activeCategory =
     ORAL_BOOK_CATEGORIES.find((cat) => cat.id === selectedBookCatId) ?? ORAL_BOOK_CATEGORIES[0];
@@ -35,23 +50,26 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
         <div>
           <div className="text-center max-w-2xl mx-auto mb-10">
             <p className="text-sm font-bold text-[#4C227C] mb-2">
-              Original Educational Initiatives
+              Our Original Educational Resource
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-slate-950 text-balance">
-              Curated with Purpose, Rooted in Language & Stories
+              Early Wings Oral Book
             </h2>
+            <p className="text-sm sm:text-base text-slate-600 font-medium mt-1">
+              Curated with Purpose, Created with Love · Playgroup to Grade 2
+            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
             {/* Large Bento Card: Early Wings Oral Book */}
             <div className="lg:col-span-7 bg-[#F5F0FF] border-2 border-purple-200/80 rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
               <div className="space-y-4">
-                <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center justify-between gap-4 flex-wrap">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#4C227C] text-white text-xs font-bold uppercase tracking-wider">
                     <BookOpen className="w-4 h-4" />
-                    <span>Exclusive Educational Resource</span>
+                    <span>Original Educational Resource</span>
                   </span>
-                  <span className="text-xs font-bold text-[#4C227C]">
+                  <span className="text-xs font-bold text-[#4C227C] bg-white px-2.5 py-1 rounded-full border border-purple-200">
                     Playgroup to Grade 2
                   </span>
                 </div>
@@ -65,18 +83,41 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
                   </p>
                 </div>
 
-                <p className="text-xs sm:text-sm text-slate-700 font-semibold bg-white/70 border border-purple-200/60 rounded-xl p-3 leading-relaxed">
-                  {EARLY_WINGS_ORAL_BOOK.authorship}
-                </p>
+                {/* Actual Book Cover Mockup Image Frame */}
+                <div
+                  onClick={() => setIsBookModalOpen(true)}
+                  className="relative rounded-2xl overflow-hidden border-2 border-purple-200 shadow-md group cursor-pointer bg-white"
+                  title="Click to view full Early Wings Oral Book resource overview"
+                >
+                  <img
+                    src={EARLY_WINGS_ORAL_BOOK.image}
+                    alt={EARLY_WINGS_ORAL_BOOK.alt}
+                    className="w-full h-auto object-cover group-hover:scale-[1.01] transition-transform duration-200"
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white text-xs sm:text-sm font-bold backdrop-blur-xs">
+                    <ZoomIn className="w-5 h-5" />
+                    <span>Click to Zoom & Inspect Book</span>
+                  </div>
+                </div>
 
-                <p className="text-sm text-slate-700 leading-relaxed font-medium">
+                {/* Author's Guiding Words */}
+                <div className="bg-white/80 border border-purple-200 rounded-xl p-3.5 space-y-1">
+                  <p className="text-xs sm:text-sm font-bold text-[#4C227C] italic leading-snug">
+                    “{EARLY_WINGS_ORAL_BOOK.quote}”
+                  </p>
+                  <p className="text-[11px] sm:text-xs text-slate-600 font-semibold">
+                    — {EARLY_WINGS_ORAL_BOOK.authorship}
+                  </p>
+                </div>
+
+                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
                   {EARLY_WINGS_ORAL_BOOK.purpose}
                 </p>
 
                 {/* The Book Includes List */}
                 <div className="bg-white rounded-2xl p-4 sm:p-5 border border-purple-100 space-y-2.5">
                   <p className="text-xs font-bold uppercase tracking-wider text-[#4C227C]">
-                    The Book Includes:
+                    What’s Inside the Book?
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {EARLY_WINGS_ORAL_BOOK.includes.map((item) => (
@@ -209,6 +250,47 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
           </div>
         </div>
 
+        {/* How It Benefits Children Strip (Matching the Book Poster) */}
+        <div className="bg-[#FFF8DC] border-2 border-amber-300 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div className="text-center max-w-2xl mx-auto mb-6">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#4C227C] text-white text-xs font-bold uppercase tracking-wider mb-2">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Oral Learning Outcomes</span>
+            </span>
+            <h3 className="font-display text-2xl sm:text-3xl font-bold text-slate-950">
+              How It Benefits Children?
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
+              Cultivating strong language foundations, confident expression, and cultural pride from Playgroup to Grade 2.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+            {EARLY_WINGS_ORAL_BOOK.benefits.map((benefit, idx) => {
+              const icons = [MessageSquare, Brain, Compass, Star, Heart];
+              const IconComp = icons[idx % icons.length];
+              return (
+                <div
+                  key={benefit.title}
+                  className="bg-white border-2 border-amber-200/90 rounded-2xl p-4 flex flex-col justify-between text-center hover:shadow-md transition-shadow"
+                >
+                  <div className="flex flex-col items-center">
+                    <div className="w-10 h-10 rounded-full bg-amber-100 text-[#B45309] flex items-center justify-center mb-2.5">
+                      <IconComp className="w-5 h-5" />
+                    </div>
+                    <h4 className="font-display text-sm font-bold text-slate-950 leading-snug mb-1">
+                      {benefit.title}
+                    </h4>
+                  </div>
+                  <p className="text-[11px] text-slate-600 font-medium leading-relaxed">
+                    {benefit.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
         {/* Beyond the Classroom + Joyful Storybook Classroom Frame */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch pt-2">
           <div className="lg:col-span-7 flex flex-col justify-center">
@@ -295,6 +377,61 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal for Full Book Graphic */}
+      {isBookModalOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
+          onClick={() => setIsBookModalOpen(false)}
+        >
+          <div
+            className="relative max-w-4xl w-full bg-white rounded-3xl overflow-hidden shadow-2xl p-4 sm:p-6 space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between gap-4 border-b border-slate-200 pb-3">
+              <div>
+                <h3 className="font-display text-lg sm:text-xl font-bold text-slate-950">
+                  {EARLY_WINGS_ORAL_BOOK.title}
+                </h3>
+                <p className="text-xs text-[#4C227C] font-semibold">
+                  {EARLY_WINGS_ORAL_BOOK.subtitle} · Compiled by Karunamai Nandamuri
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsBookModalOpen(false)}
+                className="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 transition-colors"
+                aria-label="Close modal"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="max-h-[75vh] overflow-y-auto rounded-2xl border border-slate-200 bg-slate-50 flex items-center justify-center">
+              <img
+                src={EARLY_WINGS_ORAL_BOOK.image}
+                alt={EARLY_WINGS_ORAL_BOOK.alt}
+                className="w-full h-auto object-contain max-h-[70vh]"
+              />
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-600 pt-1">
+              <p className="font-medium italic text-slate-800">
+                “{EARLY_WINGS_ORAL_BOOK.quote}”
+              </p>
+              <button
+                type="button"
+                onClick={() => setIsBookModalOpen(false)}
+                className="self-end sm:self-auto px-4 py-2 font-bold text-white bg-[#4C227C] rounded-xl hover:bg-[#3A1763] transition-colors"
+              >
+                Close Preview
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
