@@ -93,7 +93,7 @@ export const SCHOOL_IDENTITY = {
     email: 'earlywingspreschoolvijayawada@gmail.com',
     facebookUrl: 'https://www.facebook.com/share/1A1M9rq4vp/',
     instagramUrl: 'https://www.instagram.com/earlywingspreschool?utm_source=qr&mdxt=cXdqc2pzMnlnZXN5',
-    youtubeUrl: 'https://www.youtube.com/watch?v=MqdXBWG0qRE',
+    youtubeUrl: 'https://youtube.com/@karunamainandhamuri1688?si=RGFpaVCMBf7viJ0w',
     youtubeChannelUrl: 'https://youtube.com/@earlywings2039?si=1lSO7joZ0-gFE2lk',
   },
 };

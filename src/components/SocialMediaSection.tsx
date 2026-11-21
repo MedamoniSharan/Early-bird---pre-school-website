@@ -58,7 +58,7 @@ export function SocialMediaSection({ onNavigate }: SocialMediaSectionProps) {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-bold text-[#2A104C] bg-[#FFBE0B] hover:bg-[#F5B300] border-b-4 border-[#D99B00] active:translate-y-0.5 rounded-2xl transition-all"
                 >
                   <YouTubeLogo className="w-5 h-5 shrink-0" />
-                  <span>Watch Karunamai’s Journey (10 Glorious Years) & Tales</span>
+                  <span>Visit Karunamai Nandamuri on YouTube</span>
                   <ExternalLink className="w-4 h-4 shrink-0" aria-hidden="true" />
                 </a>
                 <span className="text-xs font-bold text-slate-600 text-center sm:text-left">
