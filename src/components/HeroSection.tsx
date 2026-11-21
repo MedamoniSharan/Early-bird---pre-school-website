@@ -106,7 +106,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                 </p>
 
                 <h1 className="font-display text-[clamp(1.8rem,5vw,3.45rem)] font-bold leading-[1.08] tracking-tight text-white text-balance">
-                  Rise ~ Rooted Wings Within
+                  {SCHOOL_IDENTITY.tagline}
                 </h1>
               </div>
             </div>
@@ -114,6 +114,25 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <p className="text-sm sm:text-lg text-purple-100 leading-relaxed max-w-2xl font-medium">
               A joyful second home where little learners explore, play, ask big questions, and grow through Montessori materials, the Kreedo Learning Framework, and loving guidance across <span className="font-bold text-[#FFBE0B]">Playgroup, Nursery, LKG & UKG</span>.
             </p>
+
+            {/* Main Guiding Quote Card: Vision Bible Verse & Core Belief */}
+            <div className="bg-[#3A1763]/90 backdrop-blur-xs border-2 border-[#FFBE0B]/60 rounded-2xl p-4 sm:p-5 shadow-xl space-y-2.5">
+              <div className="flex items-center justify-between gap-2 flex-wrap">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFBE0B] text-[#2A104C] text-[11px] font-extrabold uppercase tracking-wide">
+                  Vision · Bible Verse
+                </span>
+                <span className="text-xs font-bold text-amber-300">
+                  {SCHOOL_IDENTITY.visionSource}
+                </span>
+              </div>
+              <blockquote className="font-display text-sm sm:text-base font-bold text-white leading-snug">
+                “{SCHOOL_IDENTITY.visionQuote}”
+              </blockquote>
+              <div className="pt-2 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-purple-100">
+                <span className="font-bold text-[#FFBE0B]">Core Belief:</span>
+                <span className="font-semibold italic">“{SCHOOL_IDENTITY.belief}”</span>
+              </div>
+            </div>
 
             {/* Storybook Classroom Photo Frame with non-overlapping inner scroll parallax */}
             <div className="relative rounded-3xl overflow-hidden border-4 border-[#FFBE0B] shadow-2xl bg-[#3A1763]">

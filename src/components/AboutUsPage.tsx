@@ -56,15 +56,28 @@ export function AboutUsPage({ onNavigate }: AboutUsPageProps) {
           </div>
 
           <div className="lg:col-span-5 bg-[#FFF5D6] border-2 border-amber-200 rounded-3xl p-6 sm:p-8 space-y-4">
-            <p className="text-xs font-bold text-[#B45309]">
-              Our Belief · {SCHOOL_IDENTITY.belief}
-            </p>
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <span className="px-2.5 py-1 rounded-full bg-[#B45309] text-white text-[11px] font-extrabold uppercase tracking-wide">
+                Vision · Bible Verse
+              </span>
+              <span className="text-xs font-bold text-[#4C227C]">
+                {SCHOOL_IDENTITY.visionSource}
+              </span>
+            </div>
             <blockquote className="font-display text-xl sm:text-2xl font-bold text-slate-950 leading-snug">
               “{SCHOOL_IDENTITY.visionQuote}”
             </blockquote>
             <p className="text-xs sm:text-sm font-bold text-[#4C227C]">
               — {SCHOOL_IDENTITY.visionSource} · Our Guiding Vision
             </p>
+            <div className="pt-3 border-t border-amber-300/80">
+              <p className="text-xs font-bold text-[#B45309] uppercase tracking-wide mb-1">
+                Core Belief
+              </p>
+              <p className="text-sm sm:text-base font-bold text-slate-900">
+                “{SCHOOL_IDENTITY.belief}”
+              </p>
+            </div>
           </div>
         </div>
 

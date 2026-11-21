@@ -44,7 +44,13 @@ export function Footer({ onNavigate }: FooterProps) {
               <p className="text-sm font-bold text-[#FFBE0B]">
                 {SCHOOL_IDENTITY.tagline}
               </p>
-              <p className="text-sm text-purple-100 leading-relaxed">
+              <p className="text-xs text-amber-200/90 font-medium italic">
+                “{SCHOOL_IDENTITY.visionQuote}” — <span className="font-bold text-[#FFBE0B] not-italic">{SCHOOL_IDENTITY.visionSource}</span>
+              </p>
+              <p className="text-xs text-purple-200 font-semibold">
+                <span className="text-[#FFBE0B]">Core Belief:</span> “{SCHOOL_IDENTITY.belief}”
+              </p>
+              <p className="text-sm text-purple-100 leading-relaxed pt-1">
                 {SCHOOL_IDENTITY.fullAddress.slice(1).join(' ')}
               </p>
               <p className="text-xs text-purple-200 tabular-nums">

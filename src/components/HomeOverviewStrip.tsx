@@ -126,16 +126,30 @@ export function HomeOverviewStrip({ onNavigate }: HomeOverviewStripProps) {
 
         {/* School Promise & Timings Strip */}
         <div className="bg-[#FFF8DC] border-2 border-amber-200 rounded-3xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-          <div className="lg:col-span-7 space-y-2">
-            <p className="text-xs font-bold text-[#4C227C]">
-              Our Promise · {SCHOOL_IDENTITY.location}
-            </p>
+          <div className="lg:col-span-7 space-y-3">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-bold text-[#4C227C]">
+                Our Promise · {SCHOOL_IDENTITY.location}
+              </span>
+              <span aria-hidden="true" className="text-slate-400">·</span>
+              <span className="text-xs font-bold text-[#B45309]">
+                {SCHOOL_IDENTITY.tagline}
+              </span>
+            </div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 text-balance">
               {SCHOOL_IDENTITY.promise}
             </h2>
-            <p className="text-sm text-slate-700 font-medium">
-              {SCHOOL_IDENTITY.visionQuote} — <span className="font-bold text-[#4C227C]">{SCHOOL_IDENTITY.visionSource}</span>
-            </p>
+            <div className="pt-2 border-t border-amber-300/60 space-y-1">
+              <p className="text-xs font-bold text-[#4C227C] uppercase tracking-wide">
+                Vision · Bible Verse
+              </p>
+              <p className="text-sm sm:text-base text-slate-800 font-bold italic leading-snug">
+                “{SCHOOL_IDENTITY.visionQuote}” — <span className="font-bold text-[#4C227C] not-italic">{SCHOOL_IDENTITY.visionSource}</span>
+              </p>
+              <p className="text-xs sm:text-sm text-slate-700 font-semibold pt-0.5">
+                <span className="font-bold text-[#B45309]">Core Belief:</span> “{SCHOOL_IDENTITY.belief}”
+              </p>
+            </div>
           </div>
 
           <div className="lg:col-span-5 bg-white border border-amber-200 rounded-2xl p-5 space-y-2">
