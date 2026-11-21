@@ -71,7 +71,7 @@ export function GallerySection({ onNavigate }: GallerySectionProps) {
             National Certificates, Honours & Joyful Classroom Moments
           </h1>
           <p className="text-sm sm:text-lg text-purple-100 max-w-2xl leading-relaxed font-medium">
-            Explore our official ECDLA #EYES2024 awards, Kreedo Early Childhood certifications, and everyday Montessori and play-based experiences at our Kanuru campus.
+            Explore our official national awards (Top 100 & Top 50 in India), Dr. Kiran Bedi 10-Year Contribution Honour, Kreedo certifications, and authentic Annual Day, festival, and classroom moments from our Kanuru campus.
           </p>
         </div>
         <WaveDivider fillColor="#FFFEFA" bgColor="#4C227C" variant="clouds" />

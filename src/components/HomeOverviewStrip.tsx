@@ -40,9 +40,9 @@ const PATHWAYS: {
   {
     page: 'gallery',
     eyebrow: 'Awards & Campus Life',
-    title: 'Certificates & Classroom Gallery',
+    title: 'Certificates & Campus Gallery',
     description:
-      'View our Top 50 Preschools in India (#EYES2024) award, Kreedo teacher certifications, and Montessori classroom photos.',
+      'View our Top 100 & Top 50 Preschool awards, 10-Year Contribution honour by Dr. Kiran Bedi, and authentic school photos.',
     cta: 'View Gallery',
     style: 'bg-[#E9FAF0] border-emerald-200 hover:border-[#4C227C]',
     icon: Award,
@@ -52,7 +52,7 @@ const PATHWAYS: {
     eyebrow: 'YouTube, Facebook & Instagram',
     title: "Karunamai's Tales & Social Updates",
     description:
-      'Watch narrated Telugu moral stories on YouTube and follow everyday celebrations from our Kanuru campus.',
+      'Watch Karunamai’s 10 glorious years journey on YouTube and follow festival, Annual Day, and classroom updates on Facebook.',
     cta: 'Connect Online',
     style: 'bg-[#FFF0F3] border-rose-200 hover:border-[#4C227C]',
     icon: PlayCircle,

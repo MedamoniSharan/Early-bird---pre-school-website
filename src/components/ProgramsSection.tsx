@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Check, ArrowRight, Clock } from 'lucide-react';
+import { Check, ArrowRight, Clock, GraduationCap, Users, BookOpen, Sparkles, Heart } from 'lucide-react';
 import {
   MAJOR_LEARNING_AREAS,
+  MONTESSORI_EDUCATORS,
   PageId,
   PROGRAMS,
   ProgramInfo,
@@ -192,6 +193,176 @@ export function ProgramsSection({
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </button>
               </div>
+            </div>
+          </div>
+
+          {/* Dedicated LKG & UKG Progression Spotlight */}
+          <div className="bg-[#FFF8DC] border-2 border-amber-200 rounded-3xl p-6 sm:p-8 mb-12">
+            <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-3 mb-6">
+              <div>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#4C227C] text-white text-xs font-bold uppercase tracking-wider mb-2">
+                  <GraduationCap className="w-4 h-4" />
+                  <span>Kindergarten Progression</span>
+                </span>
+                <h3 className="font-display text-2xl sm:text-3xl font-bold text-slate-950">
+                  Advancing Beyond Playgroup: LKG & UKG Readiness
+                </h3>
+              </div>
+              <p className="text-xs sm:text-sm font-bold text-[#B45309] bg-white px-3.5 py-1.5 rounded-full border border-amber-300 shrink-0">
+                School Timings: 9:00 AM – 3:00 PM
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* LKG Card */}
+              <div className="bg-white border-2 border-emerald-200 rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
+                <div>
+                  <div className="aspect-[16/9] w-full overflow-hidden bg-slate-100 relative">
+                    <ResilientImage
+                      src="/images/facebook/outdoor_nature_study_activity.jpg"
+                      alt="Early Wings LKG children actively exploring numeracy and nature science"
+                      fallbackTitle="LKG Exploration"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-3 left-3 bg-[#059669] text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                      LKG · Ages 4–5 Years
+                    </div>
+                  </div>
+                  <div className="p-6 space-y-3">
+                    <h4 className="font-display text-xl font-bold text-slate-950">
+                      LKG: Phonics Blending, Numeracy & Logic
+                    </h4>
+                    <p className="text-sm text-slate-600 leading-relaxed font-medium">
+                      Following gentle Playgroup foundations, LKG introduces structured Montessori workstations, CVC word blending, quantities & numerals 1–50, tactile shapes, and Telugu/English Oral Book rhymes.
+                    </p>
+                    <div className="pt-2 border-t border-slate-100 space-y-2">
+                      <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
+                        <Sparkles className="w-4 h-4 text-[#059669] shrink-0" />
+                        <span>Key Focus: Three-letter word reading, addition concepts & practical life</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
+                        <BookOpen className="w-4 h-4 text-[#059669] shrink-0" />
+                        <span>Oral Book: Telugu Vemana padyalu, bilingual vocabulary & nature themes</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6 pt-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedId('lkg');
+                      document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="w-full py-2.5 px-4 text-xs font-bold text-[#059669] bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 rounded-xl transition-colors"
+                  >
+                    View LKG Daily Schedule & Milestones
+                  </button>
+                </div>
+              </div>
+
+              {/* UKG Card */}
+              <div className="bg-white border-2 border-rose-200 rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between">
+                <div>
+                  <div className="aspect-[16/9] w-full overflow-hidden bg-slate-100 relative">
+                    <ResilientImage
+                      src="/images/facebook/teachers_and_students_achievement.jpg"
+                      alt="Early Wings UKG children graduating with fluent reading and stage confidence"
+                      fallbackTitle="UKG Classroom"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-3 left-3 bg-[#E11D48] text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                      UKG · Ages 5–6 Years
+                    </div>
+                  </div>
+                  <div className="p-6 space-y-3">
+                    <h4 className="font-display text-xl font-bold text-slate-950">
+                      UKG: Fluent Reading & Primary School Mastery
+                    </h4>
+                    <p className="text-sm text-slate-600 leading-relaxed font-medium">
+                      UKG consolidates early childhood learning into primary school readiness: sentence reading, comprehension, mental math, environmental inquiry, and expressive stage speaking.
+                    </p>
+                    <div className="pt-2 border-t border-slate-100 space-y-2">
+                      <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
+                        <Sparkles className="w-4 h-4 text-[#E11D48] shrink-0" />
+                        <span>Key Focus: Fluent sentence reading, math operations, and independent writing</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs font-bold text-slate-800">
+                        <Users className="w-4 h-4 text-[#E11D48] shrink-0" />
+                        <span>Class 1 Readiness: 100% smooth admission transition to top ICSE/CBSE schools</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6 pt-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedId('ukg');
+                      document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="w-full py-2.5 px-4 text-xs font-bold text-[#E11D48] bg-rose-50 hover:bg-rose-100 border border-rose-300 rounded-xl transition-colors"
+                  >
+                    View UKG Daily Schedule & Milestones
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Montessori Trained Teachers & Facilitators Showcase */}
+          <div className="bg-white border-2 border-purple-200 rounded-3xl p-6 sm:p-8 mb-12 shadow-sm">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EFE4FF] text-[#4C227C] text-xs font-bold uppercase tracking-wider mb-2">
+                <Heart className="w-3.5 h-3.5 text-[#4C227C]" />
+                <span>Our Educators</span>
+              </span>
+              <h3 className="font-display text-2xl sm:text-3xl font-bold text-slate-950">
+                Montessori Trained Teachers & Loving Facilitators
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
+                Every classroom is led by certified educators trained in authentic Montessori pedagogy and Kreedo Early Childhood solutions, maintaining a loving 1:10 teacher-to-child ratio.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {MONTESSORI_EDUCATORS.map((educator) => (
+                <div
+                  key={educator.name}
+                  className="bg-[#FFFEFA] border-2 border-slate-200/90 rounded-3xl overflow-hidden flex flex-col justify-between hover:shadow-lg transition-all"
+                >
+                  <div>
+                    <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                      <ResilientImage
+                        src={educator.image}
+                        alt={educator.alt}
+                        fallbackTitle={educator.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-5 space-y-2">
+                      <p className="text-xs font-bold text-[#B45309] uppercase tracking-wide">
+                        {educator.experience}
+                      </p>
+                      <h4 className="font-display text-lg font-bold text-slate-950 leading-snug">
+                        {educator.name}
+                      </h4>
+                      <p className="text-xs font-bold text-[#4C227C]">
+                        {educator.role}
+                      </p>
+                      <p className="text-xs text-slate-600 leading-relaxed font-medium">
+                        {educator.credentials}
+                      </p>
+                      <div className="pt-2 border-t border-slate-200/70">
+                        <p className="text-xs text-slate-700 font-medium leading-relaxed">
+                          <span className="font-bold text-slate-900">Classroom Focus: </span>
+                          {educator.specialty}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

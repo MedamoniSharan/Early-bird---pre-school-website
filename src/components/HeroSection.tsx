@@ -96,41 +96,43 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                 />
               </div>
 
-              <div className="space-y-2">
-                <p className="text-xs sm:text-sm font-bold text-[#FFBE0B] tracking-normal">
-                  <span>{SCHOOL_IDENTITY.name}</span>
-                  <span aria-hidden="true" className="mx-1.5 sm:mx-2 text-white/40">·</span>
+              <div className="space-y-1.5">
+                <p className="text-xs sm:text-sm font-semibold text-[#FFBE0B] tracking-normal">
                   <span className="text-purple-100">{SCHOOL_IDENTITY.location}</span>
                   <span aria-hidden="true" className="mx-1.5 sm:mx-2 text-white/40">·</span>
                   <span className="text-purple-100 tabular-nums">Est. {SCHOOL_IDENTITY.foundedDate}</span>
                 </p>
 
-                <h1 className="font-display text-[clamp(1.8rem,5vw,3.45rem)] font-bold leading-[1.08] tracking-tight text-white text-balance">
-                  {SCHOOL_IDENTITY.tagline}
+                <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white text-balance">
+                  {SCHOOL_IDENTITY.name}
                 </h1>
+
+                <p className="font-display text-base sm:text-xl font-semibold text-[#FFBE0B] tracking-wide">
+                  {SCHOOL_IDENTITY.tagline}
+                </p>
               </div>
             </div>
 
-            <p className="text-sm sm:text-lg text-purple-100 leading-relaxed max-w-2xl font-medium">
-              A joyful second home where little learners explore, play, ask big questions, and grow through Montessori materials, the Kreedo Learning Framework, and loving guidance across <span className="font-bold text-[#FFBE0B]">Playgroup, Nursery, LKG & UKG</span>.
+            <p className="text-xs sm:text-base text-purple-100 leading-relaxed max-w-2xl font-normal">
+              A joyful second home where little learners explore, play, ask big questions, and grow through Montessori materials, the Kreedo Learning Framework, and loving guidance across <span className="font-semibold text-[#FFBE0B]">Playgroup, Nursery, LKG & UKG</span>.
             </p>
 
             {/* Main Guiding Quote Card: Vision Bible Verse & Core Belief */}
-            <div className="bg-[#3A1763]/90 backdrop-blur-xs border-2 border-[#FFBE0B]/60 rounded-2xl p-4 sm:p-5 shadow-xl space-y-2.5">
+            <div className="bg-[#3A1763]/85 backdrop-blur-xs border border-[#FFBE0B]/40 rounded-2xl p-3.5 sm:p-4 shadow-lg space-y-2">
               <div className="flex items-center justify-between gap-2 flex-wrap">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#FFBE0B] text-[#2A104C] text-[11px] font-extrabold uppercase tracking-wide">
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-[#FFBE0B] text-[#2A104C] text-[10px] sm:text-xs font-bold uppercase tracking-wider">
                   Vision · Bible Verse
                 </span>
-                <span className="text-xs font-bold text-amber-300">
+                <span className="text-xs font-semibold text-amber-300">
                   {SCHOOL_IDENTITY.visionSource}
                 </span>
               </div>
-              <blockquote className="font-display text-sm sm:text-base font-bold text-white leading-snug">
+              <blockquote className="font-display text-xs sm:text-sm font-medium italic text-white/95 leading-relaxed">
                 “{SCHOOL_IDENTITY.visionQuote}”
               </blockquote>
-              <div className="pt-2 border-t border-white/15 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-purple-100">
+              <div className="pt-1.5 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px] sm:text-xs text-purple-100">
                 <span className="font-bold text-[#FFBE0B]">Core Belief:</span>
-                <span className="font-semibold italic">“{SCHOOL_IDENTITY.belief}”</span>
+                <span className="font-medium text-slate-100">“{SCHOOL_IDENTITY.belief}”</span>
               </div>
             </div>
 
@@ -138,8 +140,8 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <div className="relative rounded-3xl overflow-hidden border-4 border-[#FFBE0B] shadow-2xl bg-[#3A1763]">
               <motion.div style={{ y: photoY, scale: shouldReduceMotion ? 1 : 1.06, willChange: 'transform' }}>
                 <ResilientImage
-                  src="/images/hero_preschool_classroom_1794591478807.jpg"
-                  alt="Happy Indian children learning with colorful wooden Montessori blocks and smiling educator at Early Wings Preschool"
+                  src="/images/facebook/school_annual_day_celebration.jpg"
+                  alt="Early Wings Preschool students and educators gathered for celebration in Kanuru, Vijayawada"
                   fallbackTitle="Early Wings Preschool"
                   className="w-full h-56 sm:h-72 lg:h-80 object-cover"
                 />

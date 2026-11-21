@@ -58,11 +58,11 @@ export function SocialMediaSection({ onNavigate }: SocialMediaSectionProps) {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-bold text-[#2A104C] bg-[#FFBE0B] hover:bg-[#F5B300] border-b-4 border-[#D99B00] active:translate-y-0.5 rounded-2xl transition-all"
                 >
                   <YouTubeLogo className="w-5 h-5 shrink-0" />
-                  <span>Watch Karunamai’s Tales on YouTube</span>
+                  <span>Watch Karunamai’s Journey (10 Glorious Years) & Tales</span>
                   <ExternalLink className="w-4 h-4 shrink-0" aria-hidden="true" />
                 </a>
                 <span className="text-xs font-bold text-slate-600 text-center sm:text-left">
-                  Narrated by {FOUNDER_PROFILE.name}
+                  Narrated & Presented by {FOUNDER_PROFILE.name}
                 </span>
               </div>
             </div>
@@ -99,9 +99,41 @@ export function SocialMediaSection({ onNavigate }: SocialMediaSectionProps) {
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-slate-950 mb-3">
                 Early Wings Preschool on Facebook
               </h3>
-              <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
-                Follow our Kanuru campus updates, national award celebrations (#EYES2024 Top 50 Preschools in India), cultural festival days, Annual Day performances, and parenting insights.
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
+                Follow our Kanuru campus updates, national award celebrations (Top 50 Preschools in India & Dr. Kiran Bedi 10-Year Contribution Award), cultural festival days, Annual Day performances, and educational field trips.
               </p>
+
+              {/* Facebook Photos Preview Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-6">
+                <div className="rounded-xl overflow-hidden aspect-square border border-sky-200 shadow-xs">
+                  <img
+                    src="/images/facebook/school_annual_day_celebration.jpg"
+                    alt="Early Wings Annual Day celebration from Facebook"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden aspect-square border border-sky-200 shadow-xs">
+                  <img
+                    src="/images/facebook/festival_janmashtami_krishna_celebration.jpg"
+                    alt="Sri Krishna Janmashtami celebration from Facebook"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden aspect-square border border-sky-200 shadow-xs">
+                  <img
+                    src="/images/facebook/school_field_trip_monument_visit.jpg"
+                    alt="Field trip heritage visit from Facebook"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden aspect-square border border-sky-200 shadow-xs">
+                  <img
+                    src="/images/facebook/annual_day_cultural_dance_celebration.jpg"
+                    alt="Annual Day cultural performance from Facebook"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
 
             <div>
@@ -112,7 +144,7 @@ export function SocialMediaSection({ onNavigate }: SocialMediaSectionProps) {
                 className="inline-flex items-center gap-2 px-5 py-3 text-sm font-bold text-white bg-[#0369A1] hover:bg-[#075985] border-b-4 border-[#0C4A6E] active:translate-y-0.5 rounded-2xl transition-all"
               >
                 <FacebookLogo className="w-5 h-5 shrink-0" />
-                <span>Visit Facebook Page</span>
+                <span>Visit Facebook Page & Gallery</span>
                 <ExternalLink className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>

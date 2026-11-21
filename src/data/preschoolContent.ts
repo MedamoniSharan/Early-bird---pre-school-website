@@ -93,7 +93,8 @@ export const SCHOOL_IDENTITY = {
     email: 'earlywingspreschoolvijayawada@gmail.com',
     facebookUrl: 'https://www.facebook.com/share/1A1M9rq4vp/',
     instagramUrl: 'https://www.instagram.com/earlywingspreschool?utm_source=qr&mdxt=cXdqc2pzMnlnZXN5',
-    youtubeUrl: 'https://youtube.com/@earlywings2039?si=1lSO7joZ0-gFE2lk',
+    youtubeUrl: 'https://www.youtube.com/watch?v=MqdXBWG0qRE',
+    youtubeChannelUrl: 'https://youtube.com/@earlywings2039?si=1lSO7joZ0-gFE2lk',
   },
 };
 
@@ -117,23 +118,23 @@ export function buildWhatsAppEnquiryUrl(details?: {
 
 export const HERO_MILESTONES = [
   {
-    value: '2016',
-    label: 'Established June 9',
-    subtext: 'Kanuru, Vijayawada, AP',
-  },
-  {
-    value: '100th',
+    value: 'Top 100',
     label: 'Preschool in India',
-    subtext: 'Recognised by ECDLA (2022)',
+    subtext: 'ECDLA National Award (2023)',
   },
   {
-    value: '50th',
-    label: 'National Ranking',
-    subtext: 'Recognised by ECDLA (2024)',
+    value: 'Top 50',
+    label: 'Preschool in India',
+    subtext: 'EYES National Ranking (2024)',
+  },
+  {
+    value: '10 Years',
+    label: 'Dr. Kiran Bedi Honour',
+    subtext: 'Outstanding Contribution (10 Oct 2026)',
   },
   {
     value: '2–6 Yrs',
-    label: 'Early Learning Years',
+    label: 'Ages Nurtured',
     subtext: 'Playgroup, Nursery, LKG & UKG',
   },
 ];
@@ -145,8 +146,8 @@ export const PROGRAMS: ProgramInfo[] = [
     ageRange: '2 – 3 Years',
     timing: 'Mon – Fri · 9:00 AM – 12:30 PM',
     stageLabel: 'First Steps in Discovery',
-    image: '/images/program_playgroup_toddlers_1794591737480.jpg',
-    imageAlt: 'Happy toddlers in Playgroup playing with colorful wooden Montessori stacking rings and soft sensory blocks',
+    image: '/images/facebook/classroom_toddler_learning_play.jpg',
+    imageAlt: 'Early Wings Playgroup toddlers engaged in joyful sensory and tactile learning with educators',
     accentHex: '#F59E0B',
     surfaceTint: 'bg-amber-50 border-amber-200',
     summary:
@@ -168,8 +169,8 @@ export const PROGRAMS: ProgramInfo[] = [
     ageRange: '3 – 4 Years',
     timing: 'Mon – Fri · 9:00 AM – 12:30 PM',
     stageLabel: 'Language & Sensory Foundations',
-    image: '/images/program_nursery_phonics_1794591736415.jpg',
-    imageAlt: 'Smiling Nursery children exploring wooden alphabet letters and finger painting crafts',
+    image: '/images/facebook/classroom_children_studying_activity.jpg',
+    imageAlt: 'Early Wings Nursery children learning with hands-on Montessori and Kreedo classroom materials',
     accentHex: '#0284C7',
     surfaceTint: 'bg-sky-50 border-sky-200',
     summary:
@@ -191,8 +192,8 @@ export const PROGRAMS: ProgramInfo[] = [
     ageRange: '4 – 5 Years',
     timing: 'Mon – Fri · 9:00 AM – 3:00 PM',
     stageLabel: 'Early Literacy & Logical Thinking',
-    image: '/images/program_lkg_numeracy_1794591738118.jpg',
-    imageAlt: 'Joyful LKG children counting colorful Montessori beads and solving wooden shape puzzles together',
+    image: '/images/facebook/outdoor_nature_study_activity.jpg',
+    imageAlt: 'Early Wings LKG students actively exploring numeracy, letters, and theme discovery',
     accentHex: '#059669',
     surfaceTint: 'bg-emerald-50 border-emerald-200',
     summary:
@@ -214,8 +215,8 @@ export const PROGRAMS: ProgramInfo[] = [
     ageRange: '5 – 6 Years',
     timing: 'Mon – Fri · 9:00 AM – 3:00 PM',
     stageLabel: 'School & Life Readiness',
-    image: '/images/program_ukg_readiness_1794591736397.jpg',
-    imageAlt: 'Confident UKG students reading illustrated books and exploring a globe with their teacher',
+    image: '/images/facebook/teachers_and_students_achievement.jpg',
+    imageAlt: 'Early Wings UKG children learning confidently with caring Montessori teachers',
     accentHex: '#E11D48',
     surfaceTint: 'bg-rose-50 border-rose-200',
     summary:
@@ -425,32 +426,25 @@ export const JOURNEY_ACHIEVEMENTS: AchievementItem[] = [
       'Established on 9th June 2016 with a mission to make quality, value-based early childhood education accessible and joyful.',
   },
   {
-    year: '2022',
-    title: 'Recognised as the 100th Preschool in India',
-    organization: 'Early Childhood Development & Learning Association (ECDLA)',
+    year: '2023',
+    title: 'Top 100 Preschools in India — ECDLA Awards',
+    organization: 'Early Childhood Development & Learning Association (ECDLA) · Chennai (27 April 2023)',
     detail:
-      'National recognition acknowledging our structured Montessori and Kreedo classroom standards.',
+      'Early Wings Preschool nationally recognised among the Top 100 Preschools in India for authentic child-centric early education.',
   },
   {
     year: '2024',
-    title: '50th-Place National Ranking — Top 50 Preschools in India',
-    organization: 'ECDLA · #EYES2024 Summit & Awards',
+    title: 'Top 50 Preschools in India (#EYES2024)',
+    organization: 'ECDLA & GEC · Radisson Hi-Tech City, Hyderabad (27 July 2024)',
     detail:
-      'Honoured as one of the Top 50 Preschools in India for exceptional commitment to early education and a nurturing environment.',
-  },
-  {
-    year: '2024',
-    title: 'Woman Acharya of the Year & Top Distinguished Leader in Education',
-    organization: 'EK NARI 100 PE BHARI & ECDLA #EYES2024',
-    detail:
-      'Founder & Principal Karunamai Nandamuri honoured nationally for leadership and passion for early childhood teaching.',
+      'Honoured as one of the Top 50 Preschools in India and Top Distinguished Leader in Education awarded to Principal Karunamai Nandamuri.',
   },
   {
     year: '2026',
-    title: 'Recognised at ECDLA EYES Summit',
-    organization: 'Mumbai, India',
+    title: '10 Years of Contribution Award — Honoured by Dr. Kiran Bedi',
+    organization: 'Early Years Educators Summit 2026 (11th Edition) · The LaLiT, Mumbai (10 October 2026)',
     detail:
-      'Founder honoured at the national Early Years Education Summit for ongoing educational innovation.',
+      'Chief Guest Dr. Kiran Bedi presented the prestigious #EYES2026HONOURS award to Ms. Karunamai Nandamuri for 10 glorious years of dedication to early childhood education.',
   },
 ];
 
@@ -509,17 +503,17 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'award-eyes2026-stage',
     category: 'certificates',
-    title: 'Honoured at #EYES2026HONOURS Summit',
-    subtitle: 'Early Years Educators Summit 2026 national stage recognition — Mumbai',
+    title: '10 Years Contribution Award — Honoured by Dr. Kiran Bedi',
+    subtitle: 'Chief Guest Dr. Kiran Bedi presenting #EYES2026HONOURS at The LaLiT, Mumbai',
     year: '10 October 2026',
     image: '/assets/aistudio/83c150fc-e205-47a3-8a0e-f11a486b5218_42a00dae.jpg',
-    alt: 'Karunamai Nandamuri receiving #EYES2026HONOURS award on stage at Early Years Educators Summit 2026',
+    alt: 'Principal Karunamai Nandamuri receiving the 10 Years Contribution Honour from Dr. Kiran Bedi at EYES 2026 Summit in Mumbai',
   },
   {
     id: 'award-eyes2026-portrait',
     category: 'certificates',
-    title: 'Early Years Educators Summit 2026 (11th Edition)',
-    subtitle: 'Karunamai Nandamuri holding the EYES 2026 Trophy & Certificate of Honour',
+    title: 'EYES 2026 11th Edition Trophy & Honour',
+    subtitle: 'Karunamai Nandamuri holding the EYES 2026 Trophy & Certificate of Honour presented by Dr. Kiran Bedi',
     year: '10 October 2026',
     image: '/assets/aistudio/ca59a61d-85da-4d9d-b8af-6fe72f625ba3_2c9a29f6.jpg',
     alt: 'Karunamai Nandamuri with the EYES 2026 11th Edition Trophy and Certificate of Honour on stage',
@@ -527,29 +521,29 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'award-eyes2026-certificate-trophy',
     category: 'certificates',
-    title: 'EYES 2026 Certificate of Honour & Wooden Trophy',
-    subtitle: 'Outstanding Contribution to Early Years Education — The LaLiT, Mumbai (GEC)',
+    title: 'Outstanding Contribution to Early Years Education Trophy',
+    subtitle: 'Honour Certificate & Handcrafted Trophy presented at The LaLiT, Mumbai',
     year: '10 October 2026',
     image: '/assets/aistudio/fadda97b-df9c-4a10-a2fb-27fe3b65256d_e69aa409.jpg',
-    alt: 'EYES 2026 Certificate of Honour and engraved wooden trophy presented to Ms. Karunamai Nandamuri',
+    alt: 'EYES 2026 Certificate of Honour and engraved trophy celebrating 10 Years of Contribution to Early Years Education',
   },
   {
     id: 'award-eyes2026-trophy-detail',
     category: 'certificates',
-    title: 'Outstanding Contribution to Early Years Education (#EYES2026HONOURS)',
-    subtitle: 'Handcrafted EYES 2026 Honour Trophy presented to Ms. Karunamai Nandamuri at The LaLiT, Mumbai',
+    title: '10-Year Contribution Trophy Citation',
+    subtitle: 'Official citation recognizing leadership, commitment, and meaningful impact through education',
     year: '10 October 2026',
     image: '/assets/aistudio/06c5fcc9-3e40-432e-b257-46dfbd885a45_c31a2dee.jpg',
-    alt: 'Close-up of the EYES 2026 wooden pencil trophy presented to Ms. Karunamai Nandamuri for Outstanding Contribution to Early Years Education',
+    alt: 'Close-up of the EYES 2026 trophy presented to Ms. Karunamai Nandamuri for Outstanding Contribution to Early Years Education on 10 October 2026',
   },
   {
     id: 'award-eyes2024-stage',
     category: 'certificates',
-    title: 'EYES 2024 Awards Presentation — Hyderabad',
-    subtitle: 'Presenting Top 50 Preschools in India & Top Distinguished Leader in Education honours at Radisson Hi-Tech City',
+    title: 'Top 50 Preschools in India (#EYES2024)',
+    subtitle: 'Presenting Top 50 Preschools in India & Top Distinguished Leader honours at Radisson Hi-Tech City, Hyderabad',
     year: '27 July 2024',
     image: '/assets/aistudio/646fee87-47cc-4d0b-a406-671f17d93684_abdbf1f3.jpg',
-    alt: 'Karunamai Nandamuri receiving dual Certificates of Recognition on stage at Early Years Educators Summit & Awards 2024',
+    alt: 'Karunamai Nandamuri receiving Top 50 Preschools in India and Distinguished Leader certificates on stage at EYES 2024',
   },
   {
     id: 'award-eyes2023-chennai',
@@ -563,7 +557,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'cert-top-50',
     category: 'certificates',
-    title: 'Top 50 Preschools in India (#EYES2024)',
+    title: 'Top 50 Preschools in India Official Certificate',
     subtitle: 'Certificate of Recognition awarded to Early Wings Preschool, Vijayawada by ECDLA & GEC',
     year: '27 July 2024',
     image: '/assets/aistudio/4d1a81fc-8c74-446b-b36f-745c62b3c804_940fc1ea.jpg',
@@ -596,68 +590,139 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: '/assets/aistudio/b061acc4-3c06-4435-8463-936a3606c82d_ddbb6c72.jpg',
     alt: 'Kreedo Teacher Training Bengaluru Certificate of Completion awarded to Karunamai Nandamuri on 20 May 2016',
   },
+  // Authentic Facebook Community & Campus Life Photos
   {
-    id: 'classroom-hero',
-    category: 'classroom',
-    title: 'Guided Montessori Table Exploration',
-    subtitle: 'Facilitators working individually with children using hands-on wooden materials',
-    image: '/images/hero_preschool_classroom_1794591478807.jpg',
-    alt: 'Early Wings teacher guiding children with wooden Montessori puzzles in a sunlit classroom',
-  },
-  {
-    id: 'classroom-montessori',
-    category: 'classroom',
-    title: 'Montessori Sensorial & Numeracy Lab',
-    subtitle: 'Pink tower, geometric solids, counting beads, and tactile phonics cards',
-    image: '/images/montessori_sensory_learning_1794591478244.jpg',
-    alt: 'Wooden Montessori pink tower, geometric solids, counting beads, and phonics cards',
-  },
-  {
-    id: 'activity-circle',
+    id: 'school-annual-day-grand',
     category: 'activities',
-    title: 'Joyful Circle Time & Music',
-    subtitle: 'Developing confidence, rhythm, and social bonding together',
-    image: '/images/why_holistic_circle_time_1794592559146.jpg',
-    alt: 'Preschool teacher and children clapping happily during circle time',
+    title: 'Annual Day Celebrations & Student Honours',
+    subtitle: 'Early Wings Preschool community celebrating milestones, student awards, and parent partnerships',
+    image: '/images/facebook/school_annual_day_celebration.jpg',
+    alt: 'Early Wings Preschool students, parents, and educators gathered for the grand Annual Day celebration',
   },
   {
-    id: 'activity-storytelling',
+    id: 'festival-janmashtami-krishna',
     category: 'activities',
-    title: 'Storytelling, Puppetry & Nature Craft',
-    subtitle: 'Creative expression and language imagination in action',
-    image: '/images/creative_storytelling_arts_1794591479625.jpg',
-    alt: 'Children enjoying puppet storytelling and leaf craft activities',
+    title: 'Sri Krishna Janmashtami & Cultural Festivities',
+    subtitle: 'Preserving our traditions through joyous costumes, devotional songs, and cultural celebrations',
+    image: '/images/facebook/festival_janmashtami_krishna_celebration.jpg',
+    alt: 'Early Wings preschool student dressed as Lord Krishna with peacock feather and flute celebrating Janmashtami',
   },
   {
-    id: 'stage-playgroup',
+    id: 'annual-dance-performance',
     category: 'activities',
-    title: 'Playgroup Sensory Discovery',
-    subtitle: 'Ages 2–3 years · Motor coordination and tactile play',
-    image: '/images/program_playgroup_toddlers_1794591737480.jpg',
-    alt: 'Playgroup toddlers stacking wooden rings and soft sensory blocks',
+    title: 'Annual Cultural Dance & Stage Performances',
+    subtitle: 'Building stage courage, rhythm, team coordination, and joyful self-expression',
+    image: '/images/facebook/annual_day_cultural_dance_celebration.jpg',
+    alt: 'Preschool children in bright traditional costumes performing cultural dance on stage',
   },
   {
-    id: 'stage-nursery',
+    id: 'annual-kids-performance',
     category: 'activities',
-    title: 'Nursery Phonics & Painting',
-    subtitle: 'Ages 3–4 years · Language readiness and creative exploration',
-    image: '/images/program_nursery_phonics_1794591736415.jpg',
-    alt: 'Nursery children exploring wooden letters and watercolor painting',
+    title: 'Children’s Day & Annual Day Celebrations',
+    subtitle: 'Celebrating every child’s voice, talents, and smiles with certificates and encouragement',
+    image: '/images/facebook/annual_day_kids_performance_smile.jpg',
+    alt: 'Early Wings children smiling proudly with their performance certificates',
   },
   {
-    id: 'stage-lkg',
+    id: 'field-trip-heritage',
+    category: 'activities',
+    title: 'Field Trips & Heritage Exploration',
+    subtitle: 'Experiential learning visits to Undavalli Caves and regional heritage sites',
+    image: '/images/facebook/school_field_trip_monument_visit.jpg',
+    alt: 'Early Wings preschool learners on a guided educational field trip to heritage monuments',
+  },
+  {
+    id: 'playground-play',
+    category: 'activities',
+    title: 'Campus Playground & Gross Motor Play',
+    subtitle: 'Trampoline, climbing gym, balance beams, and safe open-air physical fun',
+    image: '/images/facebook/school_playground_trampoline_activity.jpg',
+    alt: 'Children enjoying safe trampoline and outdoor motor activities on the preschool campus',
+  },
+  {
+    id: 'educators-montessori-team',
     category: 'classroom',
-    title: 'LKG Numeracy & Reading Readiness',
-    subtitle: 'Ages 4–5 years · Abacus counting and cooperative learning',
-    image: '/images/program_lkg_numeracy_1794591738118.jpg',
-    alt: 'LKG children counting Montessori abacus beads and reading picture books',
+    title: 'Montessori Trained Teachers & Caring Facilitators',
+    subtitle: 'Dedicated, APPTI & Kreedo certified educators providing loving 1:10 mentorship',
+    image: '/images/facebook/educators_montessori_facilitators.jpg',
+    alt: 'Montessori certified teachers and educators at Early Wings Preschool',
   },
   {
-    id: 'stage-ukg',
+    id: 'teachers-mentorship-achieve',
     category: 'classroom',
-    title: 'UKG World & School Readiness',
-    subtitle: 'Ages 5–6 years · EVS globe exploration and fluent reading',
-    image: '/images/program_ukg_readiness_1794591736397.jpg',
-    alt: 'UKG children reading storybooks and exploring a classroom globe with teacher',
+    title: 'Individualized Classroom Mentorship & Achievements',
+    subtitle: 'Guiding each child at their developmental pace with warmth, patience, and positive praise',
+    image: '/images/facebook/teachers_and_students_achievement.jpg',
+    alt: 'Preschool teacher proudly mentoring students with hands-on learning materials',
+  },
+  {
+    id: 'classroom-children-activity',
+    category: 'classroom',
+    title: 'Hands-On Kreedo & Montessori Work Cycle',
+    subtitle: 'Concentration, self-directed exploration, and practical life problem solving',
+    image: '/images/facebook/classroom_children_studying_activity.jpg',
+    alt: 'Children engaged with Montessori sensory learning trays and math materials in classroom',
+  },
+  {
+    id: 'classroom-toddler-play',
+    category: 'classroom',
+    title: 'Playgroup & Nursery Sensory Discovery',
+    subtitle: 'Tactile exploration, fine motor finger coordination, and cooperative play',
+    image: '/images/facebook/classroom_toddler_learning_play.jpg',
+    alt: 'Toddlers exploring colorful sensory materials in the Early Wings classroom',
+  },
+  {
+    id: 'outdoor-nature-study',
+    category: 'classroom',
+    title: 'LKG & UKG Nature Study & Inquiry',
+    subtitle: 'Connecting classroom concepts with nature, plants, gardening, and environment',
+    image: '/images/facebook/outdoor_nature_study_activity.jpg',
+    alt: 'Early Wings preschool children conducting outdoor nature and science observation',
+  },
+];
+
+export interface EducatorProfile {
+  name: string;
+  role: string;
+  credentials: string;
+  image: string;
+  alt: string;
+  experience: string;
+  specialty: string;
+}
+
+export const MONTESSORI_EDUCATORS: EducatorProfile[] = [
+  {
+    name: 'Karunamai Nandamuri',
+    role: 'Founder, Principal & Head of Pedagogy',
+    credentials:
+      'MA English Literature · B.Ed. · Certified Montessori Teacher (APPTI) · Kreedo Early Childhood Educator (Bengaluru) · Child Psychologist & Counsellor',
+    image: '/assets/aistudio/9cbc7595-f057-4020-93f2-e8f5c451b21e_4dd1e6d7.jpg',
+    alt: 'Principal Karunamai Nandamuri, Certified Montessori Educator & Child Psychologist',
+    experience: '10+ Years Dedicated Leadership in Early Childhood Education',
+    specialty:
+      'Early childhood psychology, Kreedo & Montessori curriculum integration, Telugu storytelling, and value-based education.',
+  },
+  {
+    name: 'Certified Montessori Facilitators Team',
+    role: 'Classroom Teachers & Early Learning Guides',
+    credentials:
+      'Accredited Early Childhood Montessori Methodology & Kreedo Learning Framework (Ages 2–6 Yrs)',
+    image: '/images/facebook/educators_montessori_facilitators.jpg',
+    alt: 'Montessori certified educators team at Early Wings Preschool',
+    experience: 'Continuous Pedagogy Training & Child Safety Certified',
+    specialty:
+      'Low 1:10 teacher-to-child ratio, phonics development, sensorial apparatus guidance, and emotional nurturing.',
+  },
+  {
+    name: 'Classroom Mentorship & Student Guidance',
+    role: 'Hands-On Learning Lab Mentors',
+    credentials:
+      'Specialists in Sensory Labs, Abacus Math, Fine Motor Skills & Oral Book Recitation',
+    image: '/images/facebook/teachers_and_students_achievement.jpg',
+    alt: 'Montessori teachers mentoring children with learning materials in classroom',
+    experience: 'Individual Attention for Playgroup, Nursery, LKG & UKG',
+    specialty:
+      'Reading readiness, bilingual oral confidence, tactile geometry, and primary school transition support.',
   },
 ];
