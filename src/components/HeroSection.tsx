@@ -110,6 +110,13 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                 <p className="font-display text-base sm:text-xl font-semibold text-[#FFBE0B] tracking-wide">
                   {SCHOOL_IDENTITY.tagline}
                 </p>
+
+                <div className="pt-0.5">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 border border-[#FFBE0B]/50 text-xs font-medium text-white shadow-xs">
+                    <span className="text-[#FFBE0B] font-bold">Powered by:</span>
+                    <span>Kreedo Early Childhood Solutions, Bengaluru</span>
+                  </span>
+                </div>
               </div>
             </div>
 

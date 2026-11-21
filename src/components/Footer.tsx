@@ -50,6 +50,9 @@ export function Footer({ onNavigate }: FooterProps) {
               <p className="text-xs text-purple-200 font-semibold">
                 <span className="text-[#FFBE0B]">Core Belief:</span> “{SCHOOL_IDENTITY.belief}”
               </p>
+              <p className="text-xs text-amber-200/90 font-medium">
+                <span className="text-[#FFBE0B] font-bold">Powered by:</span> Kreedo Early Childhood Solutions. Bengaluru.
+              </p>
               <p className="text-sm text-purple-100 leading-relaxed pt-1">
                 {SCHOOL_IDENTITY.fullAddress.slice(1).join(' ')}
               </p>

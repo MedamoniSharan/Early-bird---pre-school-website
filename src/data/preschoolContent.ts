@@ -287,18 +287,19 @@ export const PEDAGOGY_PILLARS: PedagogyPillar[] = [
   {
     id: 'kreedo',
     index: '03',
-    title: 'Kreedo Learning Framework',
-    subtitle: 'Structured early childhood partnership with Kreedo Early Childhood Solutions, Bengaluru',
+    title: 'Powered by Kreedo Early Childhood Solutions',
+    subtitle: 'Kreedo Early Childhood Solutions, Bengaluru',
     accentColor: '#059669',
-    lead: 'Early Wings has partnered with Kreedo Early Childhood Solutions, Bengaluru, to strengthen its early childhood programme across eight developmental domains.',
+    lead: 'Early Wings Preschool is proudly powered by Kreedo Early Childhood Solutions, Bengaluru — delivering an activity-based curriculum, concrete sensorial materials, and verified child outcomes.',
     points: [
-      'Physical Development & Socio-Emotional Development',
-      'Cognitive Development & Language and Communication',
-      'Sensorial Development & Mathematics',
-      'Creative Development & Environment and Culture',
+      'Structured learning framework.',
+      'Montessori-inspired learning materials.',
+      'Activity-based curriculum.',
+      'Age-appropriate learning experiences.',
+      'Teacher training and pedagogical guidance.',
     ],
     closing:
-      'We integrate the structured Kreedo approach with Montessori principles and our own child-centred teaching practices.',
+      'We integrate the structured Kreedo approach with Montessori principles and child-centred teaching practices.',
   },
   {
     id: 'teachers',
@@ -331,6 +332,20 @@ export const TEACHING_METHODOLOGY_LIST = [
   'Practical Life Experiences',
   'Activity-Based Learning',
 ];
+
+export const KREEDO_POWERED = {
+  badge: 'Powered by...',
+  partner: 'Kreedo Early Childhood Solutions. Bengaluru.',
+  pillars: [
+    'Structured learning framework.',
+    'Montessori-inspired learning materials.',
+    'Activity-based curriculum.',
+    'Age-appropriate learning experiences.',
+    'Teacher training and pedagogical guidance.',
+  ],
+  summary:
+    'Early Wings Preschool is proudly powered by Kreedo Early Childhood Solutions, Bengaluru — providing structured learning frameworks, Montessori-inspired learning materials, and ongoing teacher training.',
+};
 
 export const ORAL_BOOK_CATEGORIES: OralBookCategory[] = [
   {

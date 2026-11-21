@@ -1,5 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'motion/react';
+import { CheckCircle2, Sparkles } from 'lucide-react';
+import { KREEDO_POWERED } from '../data/preschoolContent';
 import { ResilientImage } from './ResilientImage';
 import { WaveDivider } from './WaveDivider';
 
@@ -255,6 +257,36 @@ export function WhyChooseSection() {
               <p className="text-sm text-slate-800 leading-relaxed max-w-[240px] font-medium">
                 Engaging Montessori, Kreedo, and Oral Book methods that make learning joyful and meaningful.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Powered by Kreedo Early Childhood Solutions Showcase */}
+        <div className="mt-12 bg-white border-2 border-emerald-300 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div className="space-y-2 lg:max-w-md">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-[#059669] text-xs font-extrabold uppercase tracking-wide">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>{KREEDO_POWERED.badge}</span>
+              </span>
+              <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-950">
+                {KREEDO_POWERED.partner}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                {KREEDO_POWERED.summary}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 flex-1">
+              {KREEDO_POWERED.pillars.map((pillar) => (
+                <div
+                  key={pillar}
+                  className="flex items-center gap-2.5 bg-emerald-50/70 border border-emerald-200/80 rounded-2xl px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-slate-800"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-[#059669] shrink-0" aria-hidden="true" />
+                  <span>{pillar}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
