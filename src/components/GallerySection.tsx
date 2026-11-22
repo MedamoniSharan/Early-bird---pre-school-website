@@ -13,9 +13,10 @@ type CategoryFilter = 'all' | GalleryItem['category'];
 
 const FILTER_TABS: { id: CategoryFilter; label: string }[] = [
   { id: 'all', label: 'All Showcase' },
-  { id: 'certificates', label: 'Certificates & Awards' },
+  { id: 'outdoor', label: 'Outdoor Learning & Garden' },
   { id: 'classroom', label: 'Classroom & Montessori' },
-  { id: 'activities', label: 'Activities & Stages' },
+  { id: 'certificates', label: 'Certificates & Awards' },
+  { id: 'activities', label: 'Activities & Celebrations' },
 ];
 
 export function GallerySection({ onNavigate }: GallerySectionProps) {
@@ -170,15 +171,23 @@ export function GallerySection({ onNavigate }: GallerySectionProps) {
           </div>
         )}
 
-        {/* Section 2: Classroom & Activity Photos */}
+        {/* Section 2: Classroom, Outdoor & Activity Photos */}
         {classroomItems.length > 0 && (
           <div>
             <div className="mb-7">
-              <p className="text-xs font-bold text-[#4C227C] mb-1">
-                Playgroup, Nursery, LKG & UKG Experiences
+              <p className="text-xs font-semibold text-[#4C227C] mb-1">
+                {filter === 'outdoor'
+                  ? 'Open-Air Nature Classrooms & Garden Activities'
+                  : filter === 'activities'
+                  ? 'Annual Days, Cultural Festivals & Celebrations'
+                  : 'Playgroup, Nursery, LKG & UKG Experiences'}
               </p>
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-950">
-                Inside Our Montessori & Kreedo Classrooms
+              <h2 className="font-display text-2xl sm:text-3xl font-semibold text-slate-950">
+                {filter === 'outdoor'
+                  ? 'Outdoor Learning & Garden Discovery at Early Wings'
+                  : filter === 'activities'
+                  ? 'Activities, Festivals & Celebrations'
+                  : 'Inside Our Montessori, Kreedo & Outdoor Classrooms'}
               </h2>
             </div>
 

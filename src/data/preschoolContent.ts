@@ -49,7 +49,7 @@ export interface AdmissionStep {
 
 export interface GalleryItem {
   id: string;
-  category: 'certificates' | 'classroom' | 'activities';
+  category: 'certificates' | 'classroom' | 'activities' | 'outdoor';
   title: string;
   subtitle: string;
   year?: string;
@@ -738,6 +738,97 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     subtitle: 'Connecting classroom concepts with nature, plants, gardening, and environment',
     image: '/images/facebook/outdoor_nature_study_activity.jpg',
     alt: 'Early Wings preschool children conducting outdoor nature and science observation',
+  },
+  // Authentic Outdoor Learning in Garden Classrooms
+  {
+    id: 'outdoor-montessori-land-water',
+    category: 'outdoor',
+    title: 'Montessori Land & Water Forms (Sensorial Geography)',
+    subtitle: 'Open-air exploration of island, lake, peninsula, and gulf models guided by Mrs. Karunamai Nandamuri',
+    image: '/images/outdoor/outdoor_montessori_land_water_trays.jpg',
+    alt: 'Early Wings Preschool students learning land and water forms with tactile trays under the garden canopy',
+  },
+  {
+    id: 'outdoor-circle-storytelling',
+    category: 'outdoor',
+    title: 'Garden Circle Time & Oral Book Rhyme Recitation',
+    subtitle: 'Joyful outdoor storytelling, finger play, Telugu Vemana padyalu, and English rhymes on garden mats',
+    image: '/images/outdoor/outdoor_circle_time_storytelling.jpg',
+    alt: 'Early Wings children sitting in garden circle time for Telugu and English rhymes with Founder Karunamai Nandamuri',
+  },
+  {
+    id: 'outdoor-world-continents-geography',
+    category: 'outdoor',
+    title: 'Montessori World Continents & Experiential Mapping',
+    subtitle: 'Hands-on giant continent puzzle mat layout, month rays, and globe study in the preschool garden',
+    image: '/images/outdoor/outdoor_world_continents_geography.jpg',
+    alt: 'Preschool learners exploring a giant colorful world map puzzle and globe outdoors',
+  },
+  {
+    id: 'outdoor-garden-yoga-exercises',
+    category: 'outdoor',
+    title: 'Morning Garden Yoga, Balance & Wellness',
+    subtitle: 'Daily morning stretches, mindful breathing, and gross motor coordination along the green walkway',
+    image: '/images/outdoor/outdoor_garden_yoga_exercises.jpg',
+    alt: 'Early Wings preschool students practicing morning yoga stretches on the garden walkway',
+  },
+];
+
+export interface OutdoorActivityItem {
+  id: string;
+  title: string;
+  tag: string;
+  accentColor: string;
+  description: string;
+  image: string;
+  alt: string;
+  highlights: string[];
+}
+
+export const OUTDOOR_LEARNING_ACTIVITIES: OutdoorActivityItem[] = [
+  {
+    id: 'outdoor-montessori-land-water',
+    title: 'Montessori Land & Water Forms (Sensorial Geography)',
+    tag: 'Sensorial Geography',
+    accentColor: '#0284C7',
+    description:
+      'Children seated on green mats under the shaded garden canopy explore 3D Montessori land and water form trays (island, lake, peninsula, gulf) and world globe, personally guided by Mrs. Karunamai Nandamuri.',
+    image: '/images/outdoor/outdoor_montessori_land_water_trays.jpg',
+    alt: 'Early Wings Preschool students learning land and water forms with tactile trays under the garden canopy with Mrs. Karunamai Nandamuri',
+    highlights: ['Tactile landform & water trays', 'Global geography & globe rotation', 'Canopy-shaded fresh air learning'],
+  },
+  {
+    id: 'outdoor-circle-storytelling',
+    title: 'Garden Circle Time & Oral Book Recitation',
+    tag: 'Language & Expression',
+    accentColor: '#D97706',
+    description:
+      'Lush garden grass circle time where children recite Early Wings Oral Book poems, Vemana padyalu, finger games, and interactive moral storytelling with Founder & Principal Karunamai Nandamuri.',
+    image: '/images/outdoor/outdoor_circle_time_storytelling.jpg',
+    alt: 'Early Wings children sitting in garden circle time for Telugu and English rhymes with Founder Karunamai Nandamuri',
+    highlights: ['Telugu & English oral poems', 'Vemana padyalu & action songs', 'Confident conversational expression'],
+  },
+  {
+    id: 'outdoor-world-continents-geography',
+    title: 'Montessori Continents & Experiential World Mapping',
+    tag: 'Experiential Discovery',
+    accentColor: '#059669',
+    description:
+      'Experiential world geography on the garden lawn where learners arrange a giant color-coded continent puzzle map, month rays, and Earth globe, building real spatial and cultural awareness.',
+    image: '/images/outdoor/outdoor_world_continents_geography.jpg',
+    alt: 'Preschool learners exploring a giant colorful world map puzzle and globe outdoors',
+    highlights: ['Color-coded continent puzzle mat', 'Month rays & seasons alignment', 'Hands-on spatial & global awareness'],
+  },
+  {
+    id: 'outdoor-garden-yoga-exercises',
+    title: 'Morning Garden Yoga, Balance & Wellness',
+    tag: 'Gross Motor & Wellness',
+    accentColor: '#E11D48',
+    description:
+      'Daily morning yoga, stretching, balance poses, and mindful breathing along the sunny garden walkway, fostering body strength, peaceful minds, and deep connection with nature.',
+    image: '/images/outdoor/outdoor_garden_yoga_exercises.jpg',
+    alt: 'Early Wings preschool students practicing morning yoga stretches on the garden walkway',
+    highlights: ['Mindful breathing & focus postures', 'Core stability & gross motor balance', 'Energizing garden environment'],
   },
 ];
 
