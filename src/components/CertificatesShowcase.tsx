@@ -90,7 +90,7 @@ export function CertificatesShowcase({ compact = false, onViewGallery }: Certifi
               </div>
 
               {cert.year && (
-                <p className="text-xs font-extrabold text-[#B45309] tabular-nums mb-1">
+                <p className="text-xs font-semibold text-[#B45309] tabular-nums mb-1">
                   {cert.year}
                 </p>
               )}

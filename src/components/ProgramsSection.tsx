@@ -107,7 +107,7 @@ export function ProgramsSection({
                     <div className="p-5">
                       <p
                         style={{ color: program.accentHex }}
-                        className="text-xs font-extrabold tabular-nums mb-1"
+                        className="text-xs font-semibold tabular-nums mb-1"
                       >
                         {program.ageRange}
                       </p>
@@ -224,7 +224,7 @@ export function ProgramsSection({
                       fallbackTitle="LKG Exploration"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute top-3 left-3 bg-[#059669] text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                    <div className="absolute top-3 left-3 bg-[#059669] text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
                       LKG · Ages 4–5 Years
                     </div>
                   </div>
@@ -271,7 +271,7 @@ export function ProgramsSection({
                       fallbackTitle="UKG Classroom"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute top-3 left-3 bg-[#E11D48] text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                    <div className="absolute top-3 left-3 bg-[#E11D48] text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
                       UKG · Ages 5–6 Years
                     </div>
                   </div>

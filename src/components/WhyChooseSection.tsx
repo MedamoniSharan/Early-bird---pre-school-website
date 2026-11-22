@@ -265,7 +265,7 @@ export function WhyChooseSection() {
         <div className="mt-12 bg-white border-2 border-emerald-300 rounded-3xl p-6 sm:p-8 shadow-sm">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             <div className="space-y-2 lg:max-w-md">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-[#059669] text-xs font-extrabold uppercase tracking-wide">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-[#059669] text-xs font-semibold uppercase tracking-wide">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>{KREEDO_POWERED.badge}</span>
               </span>
