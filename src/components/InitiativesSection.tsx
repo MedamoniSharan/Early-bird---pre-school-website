@@ -18,6 +18,8 @@ import {
   EARLY_WINGS_ORAL_BOOK,
   EXPERIENTIAL_ACTIVITIES,
   FOUNDER_PROFILE,
+  INDEPENDENCE_DAY_SHOWCASE,
+  IndependenceDayItem,
   LEARNING_THEMES,
   ORAL_BOOK_AUTHORSHIP,
   ORAL_BOOK_CATEGORIES,
@@ -37,6 +39,7 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
   const [selectedBookCatId, setSelectedBookCatId] = useState(ORAL_BOOK_CATEGORIES[0].id);
   const [beyondTab, setBeyondTab] = useState<'activities' | 'themes'>('activities');
   const [isBookModalOpen, setIsBookModalOpen] = useState(false);
+  const [selectedIndepItem, setSelectedIndepItem] = useState<IndependenceDayItem | null>(null);
 
   const activeCategory =
     ORAL_BOOK_CATEGORIES.find((cat) => cat.id === selectedBookCatId) ?? ORAL_BOOK_CATEGORIES[0];
@@ -376,7 +379,141 @@ export function InitiativesSection({ onNavigate }: InitiativesSectionProps) {
             </div>
           </div>
         </div>
+
+        {/* Independence Day & Patriotic Celebrations Showcase */}
+        <div id="independence-day" className="bg-gradient-to-br from-amber-50/70 via-white to-emerald-50/70 border-2 border-amber-200/90 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm space-y-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+            <div className="space-y-2 max-w-2xl">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500 to-emerald-600 text-white text-xs font-semibold uppercase tracking-wider shadow-xs">
+                🇮🇳 Independence Day Celebrations
+              </span>
+              <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-950">
+                {INDEPENDENCE_DAY_SHOWCASE.theme}
+              </h3>
+              <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                {INDEPENDENCE_DAY_SHOWCASE.lead}
+              </p>
+            </div>
+            <div className="shrink-0 flex items-center gap-2 text-xs font-semibold text-slate-800 bg-white/90 px-3.5 py-2 rounded-2xl border border-amber-200 shadow-2xs">
+              <span>🌟 Annual Flag Hoisting & Patriotic Roleplay</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {INDEPENDENCE_DAY_SHOWCASE.items.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => setSelectedIndepItem(item)}
+                className="bg-white border-2 border-amber-100 hover:border-[#4C227C] rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-200 flex flex-col justify-between group cursor-pointer"
+                title="Click to view full photo"
+              >
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                    <ResilientImage
+                      src={item.image}
+                      alt={item.alt}
+                      fallbackTitle={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div
+                      style={{ backgroundColor: item.accentColor }}
+                      className="absolute top-2 left-2 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full shadow-xs"
+                    >
+                      {item.badge}
+                    </div>
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-1 text-white text-xs font-semibold backdrop-blur-xs">
+                      <ZoomIn className="w-3.5 h-3.5" />
+                      <span>View</span>
+                    </div>
+                  </div>
+                  <div className="p-3.5 space-y-1.5">
+                    <h4 className="font-display text-xs sm:text-sm font-semibold text-slate-950 leading-snug">
+                      {item.title}
+                    </h4>
+                    <p className="text-[11px] text-slate-600 leading-relaxed line-clamp-3">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="p-3.5 pt-0">
+                  <div className="border-t border-slate-100 pt-2 space-y-1">
+                    {item.highlights.slice(0, 2).map((h) => (
+                      <div key={h} className="flex items-center gap-1 text-[10px] text-slate-700 font-medium">
+                        <Check className="w-3 h-3 text-emerald-600 shrink-0" />
+                        <span className="truncate">{h}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      {/* Lightbox Modal for Independence Day Photos */}
+      {selectedIndepItem && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={selectedIndepItem.title}
+          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
+          onClick={() => setSelectedIndepItem(null)}
+        >
+          <div
+            className="relative bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl flex flex-col max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between p-4 sm:p-5 border-b border-slate-100">
+              <div>
+                <span
+                  style={{ backgroundColor: selectedIndepItem.accentColor }}
+                  className="inline-block text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full mb-1"
+                >
+                  {selectedIndepItem.badge}
+                </span>
+                <h3 className="font-display text-lg sm:text-xl font-semibold text-slate-950">
+                  {selectedIndepItem.title}
+                </h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSelectedIndepItem(null)}
+                aria-label="Close photo preview"
+                className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="relative flex-1 bg-slate-900 flex items-center justify-center p-2 overflow-hidden min-h-[300px]">
+              <img
+                src={selectedIndepItem.image}
+                alt={selectedIndepItem.alt}
+                className="max-h-[60vh] max-w-full object-contain rounded-lg"
+              />
+            </div>
+
+            <div className="p-4 sm:p-5 bg-slate-50 border-t border-slate-100 space-y-2">
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                {selectedIndepItem.description}
+              </p>
+              <div className="flex flex-wrap gap-2 pt-1">
+                {selectedIndepItem.highlights.map((highlight) => (
+                  <span
+                    key={highlight}
+                    className="inline-flex items-center gap-1 text-[11px] font-medium text-amber-900 bg-amber-100/90 px-2.5 py-1 rounded-full"
+                  >
+                    <Check className="w-3 h-3 text-emerald-600" />
+                    <span>{highlight}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Lightbox Modal for Full Book Graphic */}
       {isBookModalOpen && (

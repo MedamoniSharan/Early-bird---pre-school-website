@@ -650,6 +650,47 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: '/images/early_wings_oral_book_showcase.jpg',
     alt: 'Early Wings Oral Book front & back cover mockup authored by Karunamai Nandamuri',
   },
+  // Independence Day Celebrations
+  {
+    id: 'independence-flag-hoisting-salute',
+    category: 'activities',
+    title: 'Independence Day Flag Hoisting & Patriotic Salute',
+    subtitle: 'Tricolour flag hoisting, tributes to national leaders, and young student in patriotic warrior attire saluting the flag',
+    image: '/images/independence_day/independence_day_flag_hoisting_salute.jpg',
+    alt: 'Early Wings Preschool students and educators saluting the national flag during Independence Day celebrations',
+  },
+  {
+    id: 'independence-freedom-fighters-fancy-dress',
+    category: 'activities',
+    title: 'National Freedom Fighters Patriotic Roleplay',
+    subtitle: 'Children depicting Mahatma Gandhi, Pandit Nehru, Bhagat Singh, and Rani Lakshmibai under celebratory canopies',
+    image: '/images/independence_day/independence_day_freedom_fighters_fancy_dress.jpg',
+    alt: 'Preschoolers dressed as Mahatma Gandhi, Pandit Nehru, Bhagat Singh, and Rani Lakshmibai for Independence Day',
+  },
+  {
+    id: 'independence-bharat-mata-principal',
+    category: 'activities',
+    title: 'Bharat Mata Presentation with Principal Karunamai Nandamuri',
+    subtitle: 'Founder & Principal Karunamai Nandamuri celebrating Independence Day with student draped in the Tricolour saree',
+    image: '/images/independence_day/independence_day_principal_and_bharat_mata.jpg',
+    alt: 'Principal Karunamai Nandamuri with student dressed in Tricolour saree as Bharat Mata at Early Wings Preschool',
+  },
+  {
+    id: 'independence-celebration-group',
+    category: 'activities',
+    title: 'Independence Day Gathering — Unleash the Dreams of Our Tomorrow',
+    subtitle: 'Students and educators gathered in white attire and tricolour ribbons celebrating freedom, unity, and young aspirations',
+    image: '/images/independence_day/independence_day_celebration_group_photo.jpg',
+    alt: 'Early Wings Preschool community group photo celebrating Independence Day',
+  },
+  {
+    id: 'independence-tricolour-attire',
+    category: 'activities',
+    title: 'Patriotic Spirit & Little Freedom Warriors',
+    subtitle: 'Early Wings students beaming in festive white clothing and tricolour sashes on the preschool garden lawn',
+    image: '/images/independence_day/independence_day_tricolour_student_attire.jpg',
+    alt: 'Preschool student smiling proudly in white outfit with tricolour sash during Independence Day',
+  },
   // Authentic Facebook Community & Campus Life Photos
   {
     id: 'school-annual-day-grand',
@@ -831,6 +872,85 @@ export const OUTDOOR_LEARNING_ACTIVITIES: OutdoorActivityItem[] = [
     highlights: ['Mindful breathing & focus postures', 'Core stability & gross motor balance', 'Energizing garden environment'],
   },
 ];
+
+export interface IndependenceDayItem {
+  id: string;
+  title: string;
+  badge: string;
+  accentColor: string;
+  description: string;
+  image: string;
+  alt: string;
+  highlights: string[];
+}
+
+export const INDEPENDENCE_DAY_SHOWCASE: {
+  theme: string;
+  subtitle: string;
+  lead: string;
+  items: IndependenceDayItem[];
+} = {
+  theme: 'Unleash the Dreams of Our Tomorrow',
+  subtitle: "Children's Aspirational Future · Independence Day Celebrations",
+  lead: 'At Early Wings Preschool, celebrating Independence Day connects little hearts with national pride, cultural heritage, and deep respect for our freedom fighters through flag hoisting, patriotic songs, and freedom fighter enactments.',
+  items: [
+    {
+      id: 'independence-flag-hoisting',
+      title: 'National Flag Hoisting & Patriotic Salute',
+      badge: 'Flag Hoisting & Homage',
+      accentColor: '#D97706',
+      description:
+        'Outdoor flag hoisting with teachers and students saluting the Indian Tricolour and offering flowers in homage to national leaders (Mahatma Gandhi, Dr. B.R. Ambedkar, Subhas Chandra Bose, Bhagat Singh, and Pandit Nehru).',
+      image: '/images/independence_day/independence_day_flag_hoisting_salute.jpg',
+      alt: 'Early Wings Preschool students and educators saluting the national flag during Independence Day celebrations',
+      highlights: ['Tricolour Flag Hoisting', 'Homage to National Leaders', 'Patriotic Salutes & National Anthem'],
+    },
+    {
+      id: 'independence-freedom-fighters',
+      title: 'National Freedom Fighters Roleplay',
+      badge: 'Patriotic Fancy Dress',
+      accentColor: '#059669',
+      description:
+        'Children dressed as historic icons: Mahatma Gandhi with spectacles and stick, Pandit Nehru with cap, Shaheed Bhagat Singh with hat, and Rani Lakshmibai holding a golden sword aloft.',
+      image: '/images/independence_day/independence_day_freedom_fighters_fancy_dress.jpg',
+      alt: 'Preschoolers dressed as Mahatma Gandhi, Pandit Nehru, Bhagat Singh, and Rani Lakshmibai for Independence Day',
+      highlights: ['Mahatma Gandhi & Pandit Nehru', 'Shaheed Bhagat Singh', 'Rani Lakshmibai of Jhansi'],
+    },
+    {
+      id: 'independence-bharat-mata-principal',
+      title: 'Bharat Mata with Principal Karunamai Nandamuri',
+      badge: 'Founder & Student Bond',
+      accentColor: '#E11D48',
+      description:
+        'Founder & Principal Karunamai Nandamuri proudly standing with a young learner elegantly draped in the sacred Indian Tricolour saree celebrating national devotion.',
+      image: '/images/independence_day/independence_day_principal_and_bharat_mata.jpg',
+      alt: 'Principal Karunamai Nandamuri with student dressed in Tricolour saree as Bharat Mata at Early Wings Preschool',
+      highlights: ['Tricolour Saree Representation', 'Cultural Dignity & Pride', 'Loving Teacher Mentorship'],
+    },
+    {
+      id: 'independence-celebration-group',
+      title: 'Patriotic Gathering: Unleash the Dreams of Our Tomorrow',
+      badge: 'Campus Celebration',
+      accentColor: '#4C227C',
+      description:
+        'Educators and students united in front of the colourful preschool Independence Day banner, wearing tricolour badges, sashes, and celebratory attire.',
+      image: '/images/independence_day/independence_day_celebration_group_photo.jpg',
+      alt: 'Early Wings Preschool community group photo celebrating Independence Day',
+      highlights: ['Whole Campus Fellowship', 'Tricolour Sashes & Badges', 'Joyful Unity & Fellowship'],
+    },
+    {
+      id: 'independence-tricolour-attire',
+      title: 'Little Learners in Patriotic Splendour',
+      badge: 'Tricolour Spirit',
+      accentColor: '#D97706',
+      description:
+        'Students dressed in white kurtas and dresses with tricolour sashes and wristbands on the garden lawn, reciting national rhymes and learning the significance of freedom.',
+      image: '/images/independence_day/independence_day_tricolour_student_attire.jpg',
+      alt: 'Preschool student smiling proudly in white outfit with tricolour sash during Independence Day',
+      highlights: ['Tricolour Sashes & Wristbands', 'Garden Lawn Atmosphere', 'Stage & Vocal Confidence'],
+    },
+  ],
+};
 
 export interface EducatorProfile {
   name: string;
