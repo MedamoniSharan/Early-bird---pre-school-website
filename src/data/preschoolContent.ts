@@ -25,6 +25,8 @@ export interface PedagogyPillar {
   lead: string;
   points: string[];
   closing: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 export interface AchievementItem {
@@ -253,6 +255,8 @@ export const PEDAGOGY_PILLARS: PedagogyPillar[] = [
     title: 'Our Educational Philosophy',
     subtitle: 'Nurturing the whole child — physically, intellectually, socially, emotionally, creatively & morally',
     accentColor: '#F59E0B',
+    image: '/images/staff/staff_team_and_students_lawn_celebration.jpg',
+    imageAlt: 'Early Wings teachers and happy students giving thumbs-up together on the preschool garden lawn',
     lead: 'We believe every child is unique, capable, and naturally curious. Children learn best when given opportunities to explore, experience, question, discover, and create.',
     points: [
       'Explore surroundings and learn independently',
@@ -271,6 +275,8 @@ export const PEDAGOGY_PILLARS: PedagogyPillar[] = [
     title: 'Montessori-Based Learning',
     subtitle: 'Hands-on experiences, purposeful activities, and self-discovery',
     accentColor: '#0284C7',
+    image: '/images/classroom/classroom_montessori_decimal_math_work_cycle.jpg',
+    imageAlt: 'Montessori decimal system and place value math work cycle on classroom floor mats',
     lead: 'Children interact with purposeful Montessori materials that help them understand concepts through observation, manipulation, and exploration.',
     points: [
       'Practical Life Activities',
@@ -290,6 +296,8 @@ export const PEDAGOGY_PILLARS: PedagogyPillar[] = [
     title: 'Powered by Kreedo Early Childhood Solutions',
     subtitle: 'Kreedo Early Childhood Solutions, Bengaluru',
     accentColor: '#059669',
+    image: '/images/classroom/classroom_kreedo_math_and_science_murals.jpg',
+    imageAlt: 'Children working with Kreedo number materials in front of classroom science murals',
     lead: 'Early Wings Preschool is proudly powered by Kreedo Early Childhood Solutions, Bengaluru — delivering an activity-based curriculum, concrete sensorial materials, and verified child outcomes.',
     points: [
       'Structured learning framework.',
@@ -307,6 +315,8 @@ export const PEDAGOGY_PILLARS: PedagogyPillar[] = [
     title: 'Our Teachers — The Heart of Early Wings',
     subtitle: 'Knowledgeable, caring, and responsible facilitators trained in Montessori & Kreedo',
     accentColor: '#E11D48',
+    image: '/images/staff/staff_faculty_educators_garden_group.jpg',
+    imageAlt: 'Early Wings certified Montessori teachers and educators team in the school garden',
     lead: 'Our teachers are not merely instructors; they are facilitators who guide children towards discovery, confidence, and independence.',
     points: [
       'Understanding early childhood development',

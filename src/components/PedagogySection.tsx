@@ -41,10 +41,10 @@ export function PedagogySection() {
               <div className="rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-white flex-1 transition-transform duration-200 lg:-rotate-1 lg:hover:rotate-0">
                 <ParallaxLayer offset={14} className="w-full h-64 sm:h-72 lg:h-full">
                   <ResilientImage
-                    src="/images/montessori_sensory_learning_1794591478244.jpg"
-                    alt="Wooden Montessori geometric solids, pink tower, counting beads, and phonics cards in a sunlit Early Wings classroom"
-                    fallbackTitle="Montessori & Kreedo Materials"
-                    className="w-full h-full object-cover"
+                    src={activePillar.image ?? '/images/staff/staff_faculty_educators_garden_group.jpg'}
+                    alt={activePillar.imageAlt ?? activePillar.title}
+                    fallbackTitle={activePillar.title}
+                    className="w-full h-full object-cover transition-all duration-300"
                   />
                 </ParallaxLayer>
               </div>

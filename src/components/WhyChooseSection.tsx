@@ -169,8 +169,8 @@ export function WhyChooseSection() {
                         className="w-full h-full"
                       >
                         <ResilientImage
-                          src="/images/why_expert_educator_child_1794592559332.jpg"
-                          alt="Smiling preschool child holding wooden Montessori number blocks"
+                          src="/images/staff/staff_faculty_educators_garden_group.jpg"
+                          alt="Early Wings Preschool certified Montessori and Kreedo teaching staff in the school garden"
                           fallbackTitle="Expert Educators"
                           className="w-full h-full object-cover object-center"
                         />
