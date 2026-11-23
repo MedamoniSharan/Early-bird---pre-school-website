@@ -123,6 +123,94 @@ export function AboutUsPage({ onNavigate }: AboutUsPageProps) {
             </div>
           </div>
         </div>
+
+        {/* Campus & Faculty Community Photo Showcase */}
+        <div className="bg-[#FFFDF7] border-2 border-amber-200/90 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+            <div>
+              <p className="text-xs font-semibold text-[#4C227C] mb-1">
+                Kanuru, Vijayawada · Est. 9th June 2016
+              </p>
+              <h3 className="font-display text-2xl sm:text-3xl font-semibold text-slate-950">
+                Our Campus & Loving Educator Team
+              </h3>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-600 font-medium max-w-md">
+              A serene green courtyard and experienced Montessori facilitators creating a warm second home for your child.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {/* 1. Campus Courtyard */}
+            <div className="bg-white border border-amber-200 rounded-2xl overflow-hidden shadow-2xs group flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                <ResilientImage
+                  src="/images/campus/early_wings_campus_courtyard_lawn.jpg"
+                  alt="Early Wings Kanuru campus green courtyard lawn and classroom verandas"
+                  fallbackTitle="Kanuru Campus"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <span className="absolute top-2.5 left-2.5 bg-[#4C227C] text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-xs">
+                  Campus & Lawn
+                </span>
+              </div>
+              <div className="p-4 space-y-1">
+                <h4 className="font-display text-sm font-semibold text-slate-950">
+                  Green Courtyard & Open Play
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Lush grass lawn, outdoor playground structures, shaded verandas, and safe child-friendly environs.
+                </p>
+              </div>
+            </div>
+
+            {/* 2. Teaching Faculty */}
+            <div className="bg-white border border-amber-200 rounded-2xl overflow-hidden shadow-2xs group flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                <ResilientImage
+                  src="/images/staff/staff_faculty_educators_garden_group.jpg"
+                  alt="Teaching faculty and facilitators at Early Wings Preschool"
+                  fallbackTitle="Teaching Faculty"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <span className="absolute top-2.5 left-2.5 bg-[#059669] text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-xs">
+                  Montessori Teachers
+                </span>
+              </div>
+              <div className="p-4 space-y-1">
+                <h4 className="font-display text-sm font-semibold text-slate-950">
+                  Certified Facilitators & Staff
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Passionate, Kreedo and Montessori-trained educators providing loving guidance and individual attention.
+                </p>
+              </div>
+            </div>
+
+            {/* 3. Community Celebrations */}
+            <div className="bg-white border border-amber-200 rounded-2xl overflow-hidden shadow-2xs group flex flex-col justify-between">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                <ResilientImage
+                  src="/images/staff/staff_team_and_students_lawn_celebration.jpg"
+                  alt="Teachers and students celebrating on the campus lawn at Early Wings"
+                  fallbackTitle="Educators & Students"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <span className="absolute top-2.5 left-2.5 bg-[#E11D48] text-white text-[11px] font-semibold px-2.5 py-0.5 rounded-full shadow-xs">
+                  Our Community
+                </span>
+              </div>
+              <div className="p-4 space-y-1">
+                <h4 className="font-display text-sm font-semibold text-slate-950">
+                  Joyful Student Community
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Celebrating childhood milestones, friendships, and shared triumphs in our garden open air.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Founder Profile & Journey Section */}

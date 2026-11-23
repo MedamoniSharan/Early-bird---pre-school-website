@@ -198,9 +198,9 @@ export function WhyChooseSection() {
                         className="w-full h-full"
                       >
                         <ResilientImage
-                          src="/images/why_safe_classroom_view_1794592559835.jpg"
-                          alt="Happy preschool children seated neatly in a bright safe classroom"
-                          fallbackTitle="Safe and Secure"
+                          src="/images/campus/early_wings_campus_courtyard_lawn.jpg"
+                          alt="Early Wings Preschool spacious green courtyard lawn and safe child-friendly campus in Kanuru"
+                          fallbackTitle="Safe and Secure Campus"
                           className="w-full h-full object-cover object-center"
                         />
                       </motion.div>
@@ -209,10 +209,10 @@ export function WhyChooseSection() {
                 </div>
               </div>
               <h3 className="font-display text-xl font-bold text-slate-950 mb-2">
-                Safe and Secure
+                Safe and Secure Campus
               </h3>
               <p className="text-sm text-slate-800 leading-relaxed max-w-[240px] font-medium">
-                A protected, child-friendly campus in Kanuru ensuring safety, warmth, and peace of mind.
+                A spacious, green, child-safe campus in Kanuru featuring an open courtyard lawn, shaded verandas, and protected play spaces.
               </p>
             </div>
 
