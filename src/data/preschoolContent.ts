@@ -194,8 +194,8 @@ export const PROGRAMS: ProgramInfo[] = [
     ageRange: '4 – 5 Years',
     timing: 'Mon – Fri · 9:00 AM – 3:00 PM',
     stageLabel: 'Early Literacy & Logical Thinking',
-    image: '/images/classroom/classroom_kreedo_math_and_science_murals.jpg',
-    imageAlt: 'Early Wings LKG students actively exploring math place values and science murals on classroom floor mats',
+    image: '/images/facebook/outdoor_nature_study_activity.jpg',
+    imageAlt: 'Early Wings LKG students actively exploring nature, science discovery, and numeracy',
     accentHex: '#059669',
     surfaceTint: 'bg-emerald-50 border-emerald-200',
     summary:
@@ -1028,8 +1028,8 @@ export const MONTESSORI_EDUCATORS: EducatorProfile[] = [
     role: 'Founder, Principal & Head of Pedagogy',
     credentials:
       'MA English Literature · B.Ed. · Certified Montessori Teacher (APPTI) · Kreedo Early Childhood Educator (Bengaluru) · Child Psychologist & Counsellor',
-    image: '/assets/aistudio/9cbc7595-f057-4020-93f2-e8f5c451b21e_4dd1e6d7.jpg',
-    alt: 'Principal Karunamai Nandamuri, Certified Montessori Educator & Child Psychologist',
+    image: '/images/outdoor/outdoor_circle_time_storytelling.jpg',
+    alt: 'Founder & Principal Karunamai Nandamuri leading open-air garden circle time, rhymes, and oral storytelling',
     experience: '10+ Years Dedicated Leadership in Early Childhood Education',
     specialty:
       'Early childhood psychology, Kreedo & Montessori curriculum integration, Telugu storytelling, and value-based education.',
@@ -1039,8 +1039,8 @@ export const MONTESSORI_EDUCATORS: EducatorProfile[] = [
     role: 'Classroom Teachers & Early Learning Guides',
     credentials:
       'Accredited Early Childhood Montessori Methodology & Kreedo Learning Framework (Ages 2–6 Yrs)',
-    image: '/images/staff/staff_faculty_educators_garden_group.jpg',
-    alt: 'Montessori certified educators and faculty team in the garden at Early Wings Preschool',
+    image: '/images/facebook/educators_montessori_facilitators.jpg',
+    alt: 'Montessori certified educators and facilitators guiding children in the Early Wings classroom',
     experience: 'Continuous Pedagogy Training & Child Safety Certified',
     specialty:
       'Low 1:10 teacher-to-child ratio, phonics development, sensorial apparatus guidance, and emotional nurturing.',

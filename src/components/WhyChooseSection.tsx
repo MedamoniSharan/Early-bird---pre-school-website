@@ -140,8 +140,8 @@ export function WhyChooseSection() {
                         className="w-full h-full"
                       >
                         <ResilientImage
-                          src="/images/why_holistic_circle_time_1794592559146.jpg"
-                          alt="Teacher and preschool children clapping in circle time at Early Wings"
+                          src="/images/outdoor/outdoor_world_continents_geography.jpg"
+                          alt="Early Wings children exploring world continents and experiential geography in the open-air garden"
                           fallbackTitle="Holistic Learning"
                           className="w-full h-full object-cover object-center"
                         />
@@ -241,7 +241,7 @@ export function WhyChooseSection() {
                   <polygon points="120,16 14,202 226,202" fill="#FFFFFF" />
                   <polygon points="120,24 22,196 218,196" fill="#F3E8FF" />
                   <image
-                    href="/images/why_innovative_learner_boy_1794592562293.jpg"
+                    href="/images/outdoor/outdoor_montessori_land_water_trays.jpg"
                     x="10"
                     y="16"
                     width="220"

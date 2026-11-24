@@ -219,8 +219,8 @@ export function ProgramsSection({
                 <div>
                   <div className="aspect-[16/9] w-full overflow-hidden bg-slate-100 relative">
                     <ResilientImage
-                      src="/images/facebook/outdoor_nature_study_activity.jpg"
-                      alt="Early Wings LKG children actively exploring numeracy and nature science"
+                      src="/images/classroom/classroom_kreedo_math_and_science_murals.jpg"
+                      alt="Early Wings LKG children exploring math place values and science murals on classroom floor mats"
                       fallbackTitle="LKG Exploration"
                       className="w-full h-full object-cover"
                     />
